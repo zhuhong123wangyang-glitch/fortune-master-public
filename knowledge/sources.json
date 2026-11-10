@@ -1,0 +1,91 @@
+{
+  "version": "1.2.0",
+  "description": "文献索引见 catalog.json 和 SOURCES.md。仅 verifiedQuotes 为已核对短引，concepts 为原创摘要。",
+  "sources": [
+    {
+      "id": "zhouyi",
+      "title": "周易",
+      "url": "https://ctext.org/book-of-changes/zh",
+      "locator": "六十四卦与经传目录",
+      "verification": "source-verified",
+      "note": "原文来源已核实；本项目卦义为独立概括，未逐条校对爻辞"
+    },
+    {
+      "id": "meihua",
+      "title": "梅花易数",
+      "url": "https://zh.wikisource.org/zh-hans/梅花易数",
+      "locator": "卷一·卦以八除/爻以六除；卷二·体用生克",
+      "verification": "source-verified",
+      "note": "目录结构已核实；三数起卦与体用生克由本项目明确限定口径"
+    },
+    {
+      "id": "ditiansui",
+      "title": "滴天髓",
+      "url": "https://zh.wikisource.org/zh-hans/滴天髓",
+      "locator": "月令论、天干论、寒暖论",
+      "verification": "source-verified",
+      "note": "章节存在已核实；现代解读为本项目作者概括"
+    },
+    {
+      "id": "ziping",
+      "title": "子平真诠",
+      "url": "https://libokang.com/zh-hant/classics/bazi/子平真詮原文/",
+      "locator": "论用神、月令格局相关章节",
+      "verification": "secondary-source",
+      "note": "第三方原文整理与译注，并非版本校勘结论"
+    },
+    {
+      "id": "sanming",
+      "title": "三命通会",
+      "url": "https://zh.wikisource.org/zh-hans/三命通會",
+      "locator": "卷一至卷九目录",
+      "verification": "source-verified",
+      "note": "文献索引；维基文库缺卷十至十二，不强行伪造引文"
+    },
+    {
+      "id": "ziwei-book",
+      "title": "紫微斗数（续道藏本）",
+      "url": "https://zh.wikisource.org/zh-hant/紫微斗數",
+      "locator": "卷之一至三",
+      "verification": "source-verified",
+      "note": "用于知识索引；不同排盘流派和现代 iztro 实现未必完全一致"
+    },
+    {
+      "id": "iztro",
+      "title": "iztro 开源排盘文档",
+      "url": "https://docs.iztro.com/quick-start",
+      "locator": "通过阳历排盘 API",
+      "verification": "documentation",
+      "note": "紫微确定性排盘来源，非古籍"
+    },
+    {
+      "id": "lunar",
+      "title": "lunar-typescript 开源历法库",
+      "url": "https://github.com/6tail/lunar-typescript",
+      "locator": "八字与节气 API",
+      "verification": "documentation",
+      "note": "计算实现来源，非古籍"
+    }
+  ],
+  "algorithms": [
+    {
+      "name": "lunar-typescript",
+      "version": "1.8.6",
+      "license": "MIT",
+      "url": "https://github.com/6tail/lunar-typescript",
+      "integration": "npm runtime dependency"
+    },
+    {
+      "name": "iztro",
+      "version": "2.6.3",
+      "license": "MIT",
+      "url": "https://github.com/SylarLong/iztro",
+      "integration": "npm runtime dependency"
+    },
+    {
+      "name": "Fortune Master 64卦映射",
+      "version": "1.2.0",
+      "integration": "本项目独立结构化映射，详见 src/engines/iching.mjs"
+    }
+  ]
+}

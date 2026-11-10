@@ -1,0 +1,1815 @@
+{
+  "version": "1.0.0",
+  "systemId": "fortune-original-100",
+  "systemName": "四时百签 · 原创文化签文",
+  "policy": "本库为原创文化内容初稿，尚未通过逐条人工文学审核；非观音灵签、吕祖灵签等传统签本。签等仅为故事/情绪标签，不表示成功率或未来事件概率。",
+  "source": {
+    "id": "fortune-master-original-100",
+    "type": "original",
+    "title": "Fortune Master 四时百签",
+    "citationVerified": false,
+    "traditionalOriginal": false
+  },
+  "signs": [
+    {
+      "id": 1,
+      "title": "云开见月",
+      "lines": [
+        "云散天边月自明",
+        "山长水阔步须轻"
+      ],
+      "theme": "澄明",
+      "grade": "中吉",
+      "meaning": "疑惑不必立刻解开，先看清已知事实。",
+      "action": "梳理一项困扰，写下可以核实的证据。",
+      "keywords": [
+        "澄明",
+        "云开见月"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 2,
+      "title": "竹影临窗",
+      "lines": [
+        "竹影摇窗风未定",
+        "静听檐雨识春声"
+      ],
+      "theme": "沉静",
+      "grade": "中平",
+      "meaning": "周围变化时，保持稳定的观察。",
+      "action": "暂缓仓促回复，给自己一段整理时间。",
+      "keywords": [
+        "沉静",
+        "竹影临窗"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 3,
+      "title": "初阳照野",
+      "lines": [
+        "晓日穿林照麦畴",
+        "一犁新土待耕牛"
+      ],
+      "theme": "开端",
+      "grade": "上吉",
+      "meaning": "新的计划需要踏实的第一步。",
+      "action": "把想法拆成今日能做的小任务。",
+      "keywords": [
+        "开端",
+        "初阳照野"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 4,
+      "title": "渡口微澜",
+      "lines": [
+        "渡口潮生舟尚系",
+        "先观水势再扬帆"
+      ],
+      "theme": "审势",
+      "grade": "中平",
+      "meaning": "前进前先确认条件，谨慎不是退缩。",
+      "action": "核对资源与时间安排再行动。",
+      "keywords": [
+        "审势",
+        "渡口微澜"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 5,
+      "title": "山路回环",
+      "lines": [
+        "山路回环云作伴",
+        "行至高坡见远川"
+      ],
+      "theme": "耐心",
+      "grade": "中吉",
+      "meaning": "曲折可能只是过程而非终点。",
+      "action": "找到当前卡点的替代路径。",
+      "keywords": [
+        "耐心",
+        "山路回环"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 6,
+      "title": "新芽破土",
+      "lines": [
+        "新芽破土春泥暖",
+        "细雨无声润根深"
+      ],
+      "theme": "积累",
+      "grade": "上吉",
+      "meaning": "成长往往来自看不见的日常投入。",
+      "action": "持续一项已有的小习惯。",
+      "keywords": [
+        "积累",
+        "新芽破土"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 7,
+      "title": "疏星未眠",
+      "lines": [
+        "疏星未眠长夜静",
+        "一灯可照案前书"
+      ],
+      "theme": "专注",
+      "grade": "中平",
+      "meaning": "在复杂局面里，聚焦最重要的一件事。",
+      "action": "关闭干扰，完成一个关键步骤。",
+      "keywords": [
+        "专注",
+        "疏星未眠"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 8,
+      "title": "清泉过石",
+      "lines": [
+        "清泉过石声声细",
+        "不争先后到江流"
+      ],
+      "theme": "顺势",
+      "grade": "中吉",
+      "meaning": "有时调整节奏比强行推进更有力。",
+      "action": "重新评估一项不必要的争执。",
+      "keywords": [
+        "顺势",
+        "清泉过石"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 9,
+      "title": "风起帘栊",
+      "lines": [
+        "风起帘栊花影乱",
+        "且将窗掩护书香"
+      ],
+      "theme": "边界",
+      "grade": "下平",
+      "meaning": "外界干扰提醒你守护自己的边界。",
+      "action": "拒绝一件超出能力的额外负担。",
+      "keywords": [
+        "边界",
+        "风起帘栊"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 10,
+      "title": "归鸟知林",
+      "lines": [
+        "归鸟知林暮色深",
+        "远行终有歇肩时"
+      ],
+      "theme": "休整",
+      "grade": "中平",
+      "meaning": "放慢脚步也属于前进的一部分。",
+      "action": "给自己安排足够休息。",
+      "keywords": [
+        "休整",
+        "归鸟知林"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 11,
+      "title": "海上微光",
+      "lines": [
+        "海面天低潮未平",
+        "远灯一线指归程"
+      ],
+      "theme": "方向",
+      "grade": "中吉",
+      "meaning": "不必一次看清全部路程，先确认方向。",
+      "action": "记录下一步的具体坐标。",
+      "keywords": [
+        "方向",
+        "海上微光"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 12,
+      "title": "松间问鹤",
+      "lines": [
+        "松间鹤立霜华白",
+        "自守清枝待晓风"
+      ],
+      "theme": "原则",
+      "grade": "上吉",
+      "meaning": "保持原则能减少不必要的消耗。",
+      "action": "明确一条不愿妥协的底线。",
+      "keywords": [
+        "原则",
+        "松间问鹤"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 13,
+      "title": "秋水长天",
+      "lines": [
+        "秋水连云天色阔",
+        "孤帆稳向白沙行"
+      ],
+      "theme": "视野",
+      "grade": "中吉",
+      "meaning": "换个视角，原本拥挤的问题会变小。",
+      "action": "向不同立场的人了解一次情况。",
+      "keywords": [
+        "视野",
+        "秋水长天"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 14,
+      "title": "灯下缝衣",
+      "lines": [
+        "灯下穿针丝未断",
+        "一针一线补旧裳"
+      ],
+      "theme": "修补",
+      "grade": "中平",
+      "meaning": "面对裂缝，先修复再评价。",
+      "action": "完成一次诚恳而具体的沟通。",
+      "keywords": [
+        "修补",
+        "灯下缝衣"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 15,
+      "title": "石上新苔",
+      "lines": [
+        "石上青苔因雨生",
+        "慢慢铺成一片春"
+      ],
+      "theme": "微进",
+      "grade": "中吉",
+      "meaning": "细小进展也值得被看见。",
+      "action": "记录今天的一项微小收获。",
+      "keywords": [
+        "微进",
+        "石上新苔"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 16,
+      "title": "梅香入夜",
+      "lines": [
+        "寒枝未放千枝色",
+        "先把幽香送客来"
+      ],
+      "theme": "独立",
+      "grade": "上吉",
+      "meaning": "无须照搬别人的时间表。",
+      "action": "坚持自己的合理节奏。",
+      "keywords": [
+        "独立",
+        "梅香入夜"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 17,
+      "title": "轻舟过峡",
+      "lines": [
+        "两岸高崖风浪急",
+        "轻舟收桨避横流"
+      ],
+      "theme": "谨慎",
+      "grade": "下平",
+      "meaning": "遇到阻力时先降低暴露风险。",
+      "action": "把高风险决定延后到信息充分时。",
+      "keywords": [
+        "谨慎",
+        "轻舟过峡"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 18,
+      "title": "鸿雁成行",
+      "lines": [
+        "鸿雁成行穿暮霭",
+        "同心振翼过层云"
+      ],
+      "theme": "协作",
+      "grade": "上吉",
+      "meaning": "合适的伙伴可以分担压力。",
+      "action": "主动确认分工和预期。",
+      "keywords": [
+        "协作",
+        "鸿雁成行"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 19,
+      "title": "月下磨墨",
+      "lines": [
+        "月下磨墨香微起",
+        "笔落之前意已成"
+      ],
+      "theme": "准备",
+      "grade": "中吉",
+      "meaning": "准备的质量影响后续表达。",
+      "action": "给重要沟通写一个提纲。",
+      "keywords": [
+        "准备",
+        "月下磨墨"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 20,
+      "title": "岸柳轻垂",
+      "lines": [
+        "岸柳拂波春不语",
+        "静看鱼儿自往来"
+      ],
+      "theme": "倾听",
+      "grade": "中平",
+      "meaning": "先理解对方，再表达自己的主张。",
+      "action": "让一次对话以提问开场。",
+      "keywords": [
+        "倾听",
+        "岸柳轻垂"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 21,
+      "title": "霁雪初晴",
+      "lines": [
+        "霁雪消融溪水响",
+        "旧枝含蕊待新晴"
+      ],
+      "theme": "转机",
+      "grade": "上吉",
+      "meaning": "停滞之后可从小处重新启动。",
+      "action": "重新检查之前搁置的事项。",
+      "keywords": [
+        "转机",
+        "霁雪初晴"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 22,
+      "title": "晚霞映舟",
+      "lines": [
+        "晚霞映水千帆远",
+        "莫逐浮光忘渡头"
+      ],
+      "theme": "取舍",
+      "grade": "中平",
+      "meaning": "热闹的机会未必适合自己。",
+      "action": "删去一项优先级最低的任务。",
+      "keywords": [
+        "取舍",
+        "晚霞映舟"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 23,
+      "title": "溪桥相逢",
+      "lines": [
+        "溪桥花落人初见",
+        "一语温和胜百言"
+      ],
+      "theme": "善意",
+      "grade": "中吉",
+      "meaning": "真诚交流比精巧措辞更重要。",
+      "action": "向一位伙伴表达具体感谢。",
+      "keywords": [
+        "善意",
+        "溪桥相逢"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 24,
+      "title": "空谷回音",
+      "lines": [
+        "一声入谷千重应",
+        "回响未必尽真声"
+      ],
+      "theme": "辨别",
+      "grade": "下平",
+      "meaning": "反复听到的意见也要核实来源。",
+      "action": "区分事实、推测和情绪。",
+      "keywords": [
+        "辨别",
+        "空谷回音"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 25,
+      "title": "青瓦听雨",
+      "lines": [
+        "青瓦承雨声声缓",
+        "屋内茶温书正香"
+      ],
+      "theme": "安定",
+      "grade": "中吉",
+      "meaning": "安稳的日常也是值得珍惜的成果。",
+      "action": "整理身边一个空间。",
+      "keywords": [
+        "安定",
+        "青瓦听雨"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 26,
+      "title": "柳岸新晴",
+      "lines": [
+        "柳岸初晴舟可渡",
+        "人间好景趁春行"
+      ],
+      "theme": "行动",
+      "grade": "上吉",
+      "meaning": "条件成熟时，可以试着迈出一步。",
+      "action": "完成一项拖延已久的小决定。",
+      "keywords": [
+        "行动",
+        "柳岸新晴"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 27,
+      "title": "沙洲立鹭",
+      "lines": [
+        "白鹭栖洲潮又起",
+        "不随浪逐守清滩"
+      ],
+      "theme": "定力",
+      "grade": "中平",
+      "meaning": "暂时不行动也可以是审慎选择。",
+      "action": "为一项决定设定明确观察期。",
+      "keywords": [
+        "定力",
+        "沙洲立鹭"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 28,
+      "title": "星河渡梦",
+      "lines": [
+        "星河一线横空阔",
+        "人有微光亦可行"
+      ],
+      "theme": "希望",
+      "grade": "中吉",
+      "meaning": "大目标可以从一个微小选择开始。",
+      "action": "写下本周最可达成的目标。",
+      "keywords": [
+        "希望",
+        "星河渡梦"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 29,
+      "title": "落花护土",
+      "lines": [
+        "落花未必随风尽",
+        "化作春泥护旧根"
+      ],
+      "theme": "转化",
+      "grade": "中吉",
+      "meaning": "结束可能为另一件事腾出空间。",
+      "action": "总结一次失败带来的可用经验。",
+      "keywords": [
+        "转化",
+        "落花护土"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 30,
+      "title": "山前小亭",
+      "lines": [
+        "山前小亭容客坐",
+        "急雨过后再登峰"
+      ],
+      "theme": "等待",
+      "grade": "中平",
+      "meaning": "等待并非空白，可以用于准备。",
+      "action": "准备两套可行的后续方案。",
+      "keywords": [
+        "等待",
+        "山前小亭"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 31,
+      "title": "晨钟出岫",
+      "lines": [
+        "晨钟出岫群山醒",
+        "一念澄清万事轻"
+      ],
+      "theme": "清醒",
+      "grade": "上吉",
+      "meaning": "重新界定问题能减少重复内耗。",
+      "action": "用一句话写出真正的问题。",
+      "keywords": [
+        "清醒",
+        "晨钟出岫"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 32,
+      "title": "远浦归帆",
+      "lines": [
+        "远浦归帆天欲晚",
+        "沿途灯火照潮声"
+      ],
+      "theme": "归整",
+      "grade": "中吉",
+      "meaning": "回顾经历可以帮助选择下一程。",
+      "action": "整理一份阶段复盘。",
+      "keywords": [
+        "归整",
+        "远浦归帆"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 33,
+      "title": "半亩方塘",
+      "lines": [
+        "半亩方塘涵月色",
+        "源头清水自潺潺"
+      ],
+      "theme": "根基",
+      "grade": "中吉",
+      "meaning": "保持输入与学习让思路活络。",
+      "action": "补足一个薄弱的基础知识点。",
+      "keywords": [
+        "根基",
+        "半亩方塘"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 34,
+      "title": "云中雁字",
+      "lines": [
+        "雁字排云斜又正",
+        "风高更识队形齐"
+      ],
+      "theme": "配合",
+      "grade": "中平",
+      "meaning": "合作需要根据变化调整位置。",
+      "action": "确认团队成员对目标的理解。",
+      "keywords": [
+        "配合",
+        "云中雁字"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 35,
+      "title": "雨后石阶",
+      "lines": [
+        "雨后石阶苔欲滑",
+        "扶栏缓步过危坡"
+      ],
+      "theme": "稳妥",
+      "grade": "下平",
+      "meaning": "眼前有风险时，不必逞强。",
+      "action": "为重要环节增加一次复核。",
+      "keywords": [
+        "稳妥",
+        "雨后石阶"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 36,
+      "title": "花窗漏影",
+      "lines": [
+        "花窗漏影添春色",
+        "半扇微开纳好风"
+      ],
+      "theme": "开放",
+      "grade": "上吉",
+      "meaning": "留一点空间，才能接收新信息。",
+      "action": "尝试一种不同的解决办法。",
+      "keywords": [
+        "开放",
+        "花窗漏影"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 37,
+      "title": "桥畔候舟",
+      "lines": [
+        "桥畔候舟潮有信",
+        "先看水位再开航"
+      ],
+      "theme": "时机",
+      "grade": "中平",
+      "meaning": "好时机需要观察和准备共同成就。",
+      "action": "为等待中的事项设置提醒。",
+      "keywords": [
+        "时机",
+        "桥畔候舟"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 38,
+      "title": "松风作琴",
+      "lines": [
+        "松风入涧如鸣玉",
+        "静坐方闻细处声"
+      ],
+      "theme": "细察",
+      "grade": "中吉",
+      "meaning": "重要线索可能藏在细节里。",
+      "action": "检查被忽略的一个条件。",
+      "keywords": [
+        "细察",
+        "松风作琴"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 39,
+      "title": "长堤映月",
+      "lines": [
+        "长堤月白行人少",
+        "脚步分明路自宽"
+      ],
+      "theme": "笃行",
+      "grade": "中吉",
+      "meaning": "不必用别人的速度衡量自己。",
+      "action": "完成今天能控制的部分。",
+      "keywords": [
+        "笃行",
+        "长堤映月"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 40,
+      "title": "春山未尽",
+      "lines": [
+        "春山未尽云常在",
+        "转过峰头又见天"
+      ],
+      "theme": "韧性",
+      "grade": "上吉",
+      "meaning": "暂时看不到结果，并不等于没有进展。",
+      "action": "选择一件值得坚持的事再做一天。",
+      "keywords": [
+        "韧性",
+        "春山未尽"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 41,
+      "title": "乌云压城",
+      "lines": [
+        "乌云压城风未歇",
+        "收起高帆护一舟"
+      ],
+      "theme": "避险",
+      "grade": "下平",
+      "meaning": "不确定增加时应先保全基本盘。",
+      "action": "盘点成本、边界和退出条件。",
+      "keywords": [
+        "避险",
+        "乌云压城"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 42,
+      "title": "稻香满畦",
+      "lines": [
+        "稻香渐满千重陌",
+        "一季耕耘见秋成"
+      ],
+      "theme": "收获",
+      "grade": "上上",
+      "meaning": "成果来自投入与持续维护。",
+      "action": "整理已经成熟的项目成果。",
+      "keywords": [
+        "收获",
+        "稻香满畦"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 43,
+      "title": "月照书斋",
+      "lines": [
+        "月照书斋文字静",
+        "重读旧卷有新知"
+      ],
+      "theme": "反思",
+      "grade": "中吉",
+      "meaning": "熟悉事物换个角度也会有发现。",
+      "action": "重新审视一个默认前提。",
+      "keywords": [
+        "反思",
+        "月照书斋"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 44,
+      "title": "长风入怀",
+      "lines": [
+        "长风自远山间至",
+        "不负清晨一段行"
+      ],
+      "theme": "机会",
+      "grade": "上吉",
+      "meaning": "机会出现时更需要有序执行。",
+      "action": "确认一项准备充分的行动。",
+      "keywords": [
+        "机会",
+        "长风入怀"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 45,
+      "title": "镜湖无波",
+      "lines": [
+        "镜湖无波天倒影",
+        "欲辨真形待风停"
+      ],
+      "theme": "澄清",
+      "grade": "中平",
+      "meaning": "情绪平稳后更容易看清事情。",
+      "action": "不在激动时做不可逆决定。",
+      "keywords": [
+        "澄清",
+        "镜湖无波"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 46,
+      "title": "瓦上春草",
+      "lines": [
+        "旧瓦生青不惧寒",
+        "微风吹绿半城墙"
+      ],
+      "theme": "适应",
+      "grade": "中吉",
+      "meaning": "在有限条件中仍可以寻找生机。",
+      "action": "尝试在约束内改进一小步。",
+      "keywords": [
+        "适应",
+        "瓦上春草"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 47,
+      "title": "山寺闻泉",
+      "lines": [
+        "山寺闻泉寻水脉",
+        "穿林始见石间流"
+      ],
+      "theme": "追根",
+      "grade": "中吉",
+      "meaning": "处理表象之前先找到问题源头。",
+      "action": "为一项异常列出可能原因。",
+      "keywords": [
+        "追根",
+        "山寺闻泉"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 48,
+      "title": "临流照影",
+      "lines": [
+        "临流照影心先定",
+        "波动何妨自识身"
+      ],
+      "theme": "自知",
+      "grade": "中平",
+      "meaning": "外界评价不等于自身全部价值。",
+      "action": "写下自己的优势与待提升项。",
+      "keywords": [
+        "自知",
+        "临流照影"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 49,
+      "title": "雨霁飞虹",
+      "lines": [
+        "雨霁飞虹横远岭",
+        "晴光初照小城东"
+      ],
+      "theme": "转晴",
+      "grade": "上吉",
+      "meaning": "艰难过去后也要留心实际变化。",
+      "action": "观察一个新出现的积极信号。",
+      "keywords": [
+        "转晴",
+        "雨霁飞虹"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 50,
+      "title": "抱朴守真",
+      "lines": [
+        "粗瓷盛水亦生香",
+        "朴素时光自有光"
+      ],
+      "theme": "简化",
+      "grade": "上上",
+      "meaning": "简单往往更有持续的力量。",
+      "action": "删去工作流程中的冗余一步。",
+      "keywords": [
+        "简化",
+        "抱朴守真"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 51,
+      "title": "潮生月落",
+      "lines": [
+        "潮生月落皆有序",
+        "不把一时作久长"
+      ],
+      "theme": "周期",
+      "grade": "中平",
+      "meaning": "阶段性波动不应被过度解读。",
+      "action": "用更长周期审视一项数据。",
+      "keywords": [
+        "周期",
+        "潮生月落"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 52,
+      "title": "晨露凝珠",
+      "lines": [
+        "晨露凝珠荷未醒",
+        "清风一动满池凉"
+      ],
+      "theme": "敏锐",
+      "grade": "中吉",
+      "meaning": "微小变化可能值得关注。",
+      "action": "记录一个刚出现的新迹象。",
+      "keywords": [
+        "敏锐",
+        "晨露凝珠"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 53,
+      "title": "寒潭观鱼",
+      "lines": [
+        "寒潭观鱼知水浅",
+        "莫因清澈忘深流"
+      ],
+      "theme": "警醒",
+      "grade": "下平",
+      "meaning": "看到一部分真相不等于掌握全貌。",
+      "action": "主动寻找反例与盲点。",
+      "keywords": [
+        "警醒",
+        "寒潭观鱼"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 54,
+      "title": "篱边采菊",
+      "lines": [
+        "篱边采菊秋光好",
+        "不逐繁花守本心"
+      ],
+      "theme": "选择",
+      "grade": "中吉",
+      "meaning": "适合自己的方式比盲目竞争重要。",
+      "action": "做一次符合价值观的取舍。",
+      "keywords": [
+        "选择",
+        "篱边采菊"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 55,
+      "title": "灯火相望",
+      "lines": [
+        "隔岸灯火相望久",
+        "一桥相接两心通"
+      ],
+      "theme": "连接",
+      "grade": "上吉",
+      "meaning": "关系的改善往往从明确沟通开始。",
+      "action": "表达一次具体请求而非期待猜测。",
+      "keywords": [
+        "连接",
+        "灯火相望"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 56,
+      "title": "烟波寻岸",
+      "lines": [
+        "烟波未散难识路",
+        "且取近山作路标"
+      ],
+      "theme": "定位",
+      "grade": "中平",
+      "meaning": "模糊中先找到可靠的参照。",
+      "action": "设一个可衡量的短期指标。",
+      "keywords": [
+        "定位",
+        "烟波寻岸"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 57,
+      "title": "细雨润田",
+      "lines": [
+        "细雨连宵润沃土",
+        "无声已见麦苗齐"
+      ],
+      "theme": "养成",
+      "grade": "上上",
+      "meaning": "缓慢而稳定的滋养值得坚持。",
+      "action": "给长期任务安排固定时间。",
+      "keywords": [
+        "养成",
+        "细雨润田"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 58,
+      "title": "石桥听风",
+      "lines": [
+        "石桥听风人未至",
+        "莫将沉默作离心"
+      ],
+      "theme": "理解",
+      "grade": "中平",
+      "meaning": "缺少回应不必立刻解释为拒绝。",
+      "action": "以平和方式确认实际情况。",
+      "keywords": [
+        "理解",
+        "石桥听风"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 59,
+      "title": "渔火点点",
+      "lines": [
+        "渔火点点明江面",
+        "微光相聚照归航"
+      ],
+      "theme": "互助",
+      "grade": "上吉",
+      "meaning": "多份微小帮助能形成稳定支持。",
+      "action": "向需要的人提供具体协助。",
+      "keywords": [
+        "互助",
+        "渔火点点"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 60,
+      "title": "山涧修渠",
+      "lines": [
+        "山涧流水终归海",
+        "先把清渠引到田"
+      ],
+      "theme": "方法",
+      "grade": "中吉",
+      "meaning": "把资源导向目标比增加投入更重要。",
+      "action": "优化一次资源分配方式。",
+      "keywords": [
+        "方法",
+        "山涧修渠"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 61,
+      "title": "北窗疏竹",
+      "lines": [
+        "北窗疏竹摇清影",
+        "留得空隙好通风"
+      ],
+      "theme": "留白",
+      "grade": "中平",
+      "meaning": "适当留白可提高整体效率。",
+      "action": "在日程中保留一段缓冲时间。",
+      "keywords": [
+        "留白",
+        "北窗疏竹"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 62,
+      "title": "谷口逢春",
+      "lines": [
+        "谷口融冰青草长",
+        "千峰过后见晴阳"
+      ],
+      "theme": "复苏",
+      "grade": "上吉",
+      "meaning": "状态改善时应逐步恢复节奏。",
+      "action": "选择低风险事项重新起步。",
+      "keywords": [
+        "复苏",
+        "谷口逢春"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 63,
+      "title": "霜叶题诗",
+      "lines": [
+        "霜叶不随春色艳",
+        "自将深红写晚秋"
+      ],
+      "theme": "价值",
+      "grade": "中吉",
+      "meaning": "不同阶段有不同值得珍惜之处。",
+      "action": "回顾这阶段独有的收获。",
+      "keywords": [
+        "价值",
+        "霜叶题诗"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 64,
+      "title": "问路樵夫",
+      "lines": [
+        "山路多歧问樵叟",
+        "一言可省半程功"
+      ],
+      "theme": "请教",
+      "grade": "上吉",
+      "meaning": "合适的经验能减少盲试成本。",
+      "action": "向有经验的人请教一个具体问题。",
+      "keywords": [
+        "请教",
+        "问路樵夫"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 65,
+      "title": "露台望远",
+      "lines": [
+        "露台望远风清朗",
+        "近处尘埃暂放轻"
+      ],
+      "theme": "格局",
+      "grade": "中吉",
+      "meaning": "暂时离开细节，有助于判断方向。",
+      "action": "画出事情的整体结构。",
+      "keywords": [
+        "格局",
+        "露台望远"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 66,
+      "title": "寒枝待雪",
+      "lines": [
+        "寒枝待雪未生花",
+        "护好根须待岁华"
+      ],
+      "theme": "蓄势",
+      "grade": "中平",
+      "meaning": "条件不足时先保护基础能力。",
+      "action": "准备必要资源而非勉强启动。",
+      "keywords": [
+        "蓄势",
+        "寒枝待雪"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 67,
+      "title": "清溪照石",
+      "lines": [
+        "清溪照石分明见",
+        "一念偏差水便浑"
+      ],
+      "theme": "校准",
+      "grade": "中平",
+      "meaning": "判断需要持续校正事实依据。",
+      "action": "核对一个重要数字或说法。",
+      "keywords": [
+        "校准",
+        "清溪照石"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 68,
+      "title": "春风过岭",
+      "lines": [
+        "春风过岭千家暖",
+        "新枝不问旧枝长"
+      ],
+      "theme": "更新",
+      "grade": "上吉",
+      "meaning": "新的局面可以不受旧有框架束缚。",
+      "action": "主动学习一种新工具。",
+      "keywords": [
+        "更新",
+        "春风过岭"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 69,
+      "title": "纸鸢借风",
+      "lines": [
+        "纸鸢借风飞未稳",
+        "丝线握稳自从容"
+      ],
+      "theme": "控制",
+      "grade": "中平",
+      "meaning": "在尝试新事物时保留控制手段。",
+      "action": "给实验设定停止条件。",
+      "keywords": [
+        "控制",
+        "纸鸢借风"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 70,
+      "title": "暮鼓催归",
+      "lines": [
+        "暮鼓声声催归客",
+        "一身风雨且回家"
+      ],
+      "theme": "照顾",
+      "grade": "中吉",
+      "meaning": "照顾生活的基本需要不是浪费时间。",
+      "action": "按时休息并恢复体力。",
+      "keywords": [
+        "照顾",
+        "暮鼓催归"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 71,
+      "title": "山谷藏云",
+      "lines": [
+        "山谷藏云未见峰",
+        "莫凭轮廓定高低"
+      ],
+      "theme": "审慎",
+      "grade": "下平",
+      "meaning": "资料不足时不要急于给出结论。",
+      "action": "列出尚缺的两个关键信息。",
+      "keywords": [
+        "审慎",
+        "山谷藏云"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 72,
+      "title": "湖畔新荷",
+      "lines": [
+        "湖畔新荷初出水",
+        "向阳一寸又一寸"
+      ],
+      "theme": "成长",
+      "grade": "上吉",
+      "meaning": "阶段性进步不需要惊天动地。",
+      "action": "巩固一个已经建立的优势。",
+      "keywords": [
+        "成长",
+        "湖畔新荷"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 73,
+      "title": "夜航有灯",
+      "lines": [
+        "夜航江上灯如豆",
+        "万里归途始一程"
+      ],
+      "theme": "信心",
+      "grade": "中吉",
+      "meaning": "可以依靠清晰的小目标保持方向。",
+      "action": "把远期目标拆为下周行动。",
+      "keywords": [
+        "信心",
+        "夜航有灯"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 74,
+      "title": "桐叶传秋",
+      "lines": [
+        "一叶知秋非尽秋",
+        "还须遍看万山红"
+      ],
+      "theme": "完整",
+      "grade": "下平",
+      "meaning": "单一信号不应决定全部判断。",
+      "action": "增加第二个独立信息来源。",
+      "keywords": [
+        "完整",
+        "桐叶传秋"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 75,
+      "title": "云影随行",
+      "lines": [
+        "云影随行终会散",
+        "天光常在不须追"
+      ],
+      "theme": "放下",
+      "grade": "中平",
+      "meaning": "有些担忧会随时间自然淡去。",
+      "action": "停止反复检查一件低风险小事。",
+      "keywords": [
+        "放下",
+        "云影随行"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 76,
+      "title": "谷穗低垂",
+      "lines": [
+        "谷穗低垂盈实粒",
+        "谦和自有满仓香"
+      ],
+      "theme": "谦逊",
+      "grade": "上上",
+      "meaning": "真正扎实的成果不必张扬。",
+      "action": "用事实而非夸大语言呈现成果。",
+      "keywords": [
+        "谦逊",
+        "谷穗低垂"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 77,
+      "title": "雨后修篱",
+      "lines": [
+        "雨后修篱防晚风",
+        "篱成方可种新花"
+      ],
+      "theme": "秩序",
+      "grade": "中吉",
+      "meaning": "先修复机制再追求更多成果。",
+      "action": "补齐一个反复出现的流程缺口。",
+      "keywords": [
+        "秩序",
+        "雨后修篱"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 78,
+      "title": "水畔寻石",
+      "lines": [
+        "水畔寻石形各异",
+        "择其稳者作桥墩"
+      ],
+      "theme": "甄选",
+      "grade": "中平",
+      "meaning": "适配与可靠往往胜过表面漂亮。",
+      "action": "评估方案的维护成本。",
+      "keywords": [
+        "甄选",
+        "水畔寻石"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 79,
+      "title": "书页留香",
+      "lines": [
+        "翻过旧书香未散",
+        "新题仍待细推敲"
+      ],
+      "theme": "温故",
+      "grade": "中吉",
+      "meaning": "旧经验有价值，但不能直接套用。",
+      "action": "比较新旧场景的差异。",
+      "keywords": [
+        "温故",
+        "书页留香"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 80,
+      "title": "青鸟衔枝",
+      "lines": [
+        "青鸟衔枝归古树",
+        "春巢搭起待同飞"
+      ],
+      "theme": "建设",
+      "grade": "上吉",
+      "meaning": "小处积累的信任会改善合作。",
+      "action": "兑现一次之前的承诺。",
+      "keywords": [
+        "建设",
+        "青鸟衔枝"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 81,
+      "title": "临崖看云",
+      "lines": [
+        "临崖看云脚下险",
+        "退回平处再从容"
+      ],
+      "theme": "防护",
+      "grade": "下平",
+      "meaning": "面对高风险情形应先保护安全。",
+      "action": "暂停不熟悉的高风险操作。",
+      "keywords": [
+        "防护",
+        "临崖看云"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 82,
+      "title": "长街初市",
+      "lines": [
+        "长街初市灯渐亮",
+        "往来皆有各家忙"
+      ],
+      "theme": "互惠",
+      "grade": "中吉",
+      "meaning": "先理解他人需求才能寻找共同点。",
+      "action": "明确合作中的双向收益。",
+      "keywords": [
+        "互惠",
+        "长街初市"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 83,
+      "title": "枫林寻径",
+      "lines": [
+        "枫林千叶遮前路",
+        "低头仍见石阶新"
+      ],
+      "theme": "探索",
+      "grade": "上吉",
+      "meaning": "看似复杂的问题可以分层解决。",
+      "action": "把大问题分为三个子问题。",
+      "keywords": [
+        "探索",
+        "枫林寻径"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 84,
+      "title": "竹筏过滩",
+      "lines": [
+        "竹筏过滩须齐力",
+        "一人偏桨易回旋"
+      ],
+      "theme": "协调",
+      "grade": "中平",
+      "meaning": "不同步会增加共同承担的成本。",
+      "action": "核对合作方的时间节点。",
+      "keywords": [
+        "协调",
+        "竹筏过滩"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 85,
+      "title": "檐下春燕",
+      "lines": [
+        "春燕衔泥檐下筑",
+        "日日往返有新巢"
+      ],
+      "theme": "坚持",
+      "grade": "上上",
+      "meaning": "重复的正确动作可以积累结果。",
+      "action": "给一个长期任务设连续打卡。",
+      "keywords": [
+        "坚持",
+        "檐下春燕"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 86,
+      "title": "古井新绳",
+      "lines": [
+        "古井仍存清冽水",
+        "换条新绳取旧甘"
+      ],
+      "theme": "革新",
+      "grade": "上吉",
+      "meaning": "保留有效经验，同时更新工具。",
+      "action": "替换一个耗时的旧做法。",
+      "keywords": [
+        "革新",
+        "古井新绳"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 87,
+      "title": "月夜听潮",
+      "lines": [
+        "月夜听潮声忽远",
+        "知潮有汛不争时"
+      ],
+      "theme": "节律",
+      "grade": "中平",
+      "meaning": "尊重客观节奏能减少无谓焦虑。",
+      "action": "明确哪些因素暂不受自己控制。",
+      "keywords": [
+        "节律",
+        "月夜听潮"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 88,
+      "title": "山岚渐散",
+      "lines": [
+        "山岚渐散群峰出",
+        "一径松风可直行"
+      ],
+      "theme": "明晰",
+      "grade": "上吉",
+      "meaning": "一旦关键变量清楚，行动更容易。",
+      "action": "向相关人确认最后一个前提。",
+      "keywords": [
+        "明晰",
+        "山岚渐散"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 89,
+      "title": "砚池留墨",
+      "lines": [
+        "砚池留墨先濡笔",
+        "下字从容意更深"
+      ],
+      "theme": "表达",
+      "grade": "中吉",
+      "meaning": "清楚表达来自事先想清楚。",
+      "action": "为重要内容写出两版短句。",
+      "keywords": [
+        "表达",
+        "砚池留墨"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 90,
+      "title": "临窗惜光",
+      "lines": [
+        "临窗惜光春色短",
+        "不将晨景付空言"
+      ],
+      "theme": "珍时",
+      "grade": "中吉",
+      "meaning": "时间资源需要有意识地分配。",
+      "action": "为最重要的事情留出专注时间。",
+      "keywords": [
+        "珍时",
+        "临窗惜光"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 91,
+      "title": "风雪闭门",
+      "lines": [
+        "风雪闭门灯可守",
+        "来日道路再清扫"
+      ],
+      "theme": "守成",
+      "grade": "下平",
+      "meaning": "困难阶段先维护必要秩序。",
+      "action": "暂时冻结一项非必要支出。",
+      "keywords": [
+        "守成",
+        "风雪闭门"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 92,
+      "title": "小舟并渡",
+      "lines": [
+        "小舟并渡同看岸",
+        "各取长篙稳水流"
+      ],
+      "theme": "合作",
+      "grade": "上吉",
+      "meaning": "合作不必相同，但需要方向一致。",
+      "action": "确认共识并尊重各自分工。",
+      "keywords": [
+        "合作",
+        "小舟并渡"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 93,
+      "title": "芳草成径",
+      "lines": [
+        "芳草初萌无旧路",
+        "多行几遍自成蹊"
+      ],
+      "theme": "开路",
+      "grade": "中吉",
+      "meaning": "新的习惯需要重复练习才能稳定。",
+      "action": "开始一项可持续的日课。",
+      "keywords": [
+        "开路",
+        "芳草成径"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 94,
+      "title": "春雷初响",
+      "lines": [
+        "春雷初响云未散",
+        "谨候天晴好播田"
+      ],
+      "theme": "预备",
+      "grade": "中平",
+      "meaning": "变化预兆出现时先完成基础准备。",
+      "action": "检查执行条件而非只看趋势。",
+      "keywords": [
+        "预备",
+        "春雷初响"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 95,
+      "title": "远山如黛",
+      "lines": [
+        "远山如黛近山青",
+        "两处风光各有情"
+      ],
+      "theme": "平衡",
+      "grade": "中吉",
+      "meaning": "不同选择可能各有合理价值。",
+      "action": "写下两个方案的真实取舍。",
+      "keywords": [
+        "平衡",
+        "远山如黛"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 96,
+      "title": "江心定锚",
+      "lines": [
+        "江心风急舟须稳",
+        "一锚沉时万念安"
+      ],
+      "theme": "定盘",
+      "grade": "中平",
+      "meaning": "先建立稳定核心再应对变化。",
+      "action": "确定不可轻易改变的底线。",
+      "keywords": [
+        "定盘",
+        "江心定锚"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 97,
+      "title": "晚风送香",
+      "lines": [
+        "晚风送香穿曲径",
+        "寻常一院自成春"
+      ],
+      "theme": "感恩",
+      "grade": "上上",
+      "meaning": "珍惜现有支持能够增强韧性。",
+      "action": "向一位长期帮助你的人致谢。",
+      "keywords": [
+        "感恩",
+        "晚风送香"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 98,
+      "title": "谷雨播种",
+      "lines": [
+        "谷雨新泥宜下种",
+        "莫将春事误成空"
+      ],
+      "theme": "及时",
+      "grade": "上吉",
+      "meaning": "准备充分后要避免无限拖延。",
+      "action": "为一个成熟想法设定执行日期。",
+      "keywords": [
+        "及时",
+        "谷雨播种"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 99,
+      "title": "星落平湖",
+      "lines": [
+        "星落平湖光易碎",
+        "莫追倒影失天真"
+      ],
+      "theme": "辨幻",
+      "grade": "下平",
+      "meaning": "看似美好的想象也要经过现实检验。",
+      "action": "核实一个让自己过度兴奋的承诺。",
+      "keywords": [
+        "辨幻",
+        "星落平湖"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    },
+    {
+      "id": 100,
+      "title": "千山同春",
+      "lines": [
+        "千山同春花次第",
+        "各有时节各成芳"
+      ],
+      "theme": "圆融",
+      "grade": "上上",
+      "meaning": "每个人都有自己的节奏与位置。",
+      "action": "认可自己目前已做到的部分。",
+      "keywords": [
+        "圆融",
+        "千山同春"
+      ],
+      "sourceId": "fortune-master-original-100",
+      "editorialStatus": "original-draft-unreviewed"
+    }
+  ]
+}

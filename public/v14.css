@@ -1,0 +1,27 @@
+/* Fortune Master V1.4 · 合盘与本地档案 */
+.tabs{grid-template-columns:repeat(4,minmax(0,1fr));gap:5px}
+.tab{white-space:normal;line-height:1.4;min-height:43px}
+.v14-person{background:#f7f9f5;border:1px solid #dfe9df;border-radius:12px;padding:15px 14px;margin:14px 0}
+.v14-person h3{margin:0 0 12px;color:#3c664e;font-size:15px}
+.v14-consent{display:flex;gap:9px;align-items:flex-start;color:#4b6855;font-size:12px;line-height:1.75;margin:16px 0}
+.v14-consent input{margin-top:4px}
+.v14-people{display:grid;grid-template-columns:1fr 1fr;gap:13px}
+.v14-person-card{background:#f4f8f1;border:1px solid #d7e5d5;border-radius:11px;padding:18px}
+.v14-person-card h3{margin:0;color:#315d43;font-size:18px}
+.v14-person-card small{color:#75897b}
+.v14-four{display:grid;grid-template-columns:repeat(4,1fr);gap:5px;margin:20px 0}
+.v14-four span{font-size:18px;font-weight:700;text-align:center;color:#42714e;background:#fff;padding:12px 4px;border-radius:8px}
+.v14-cycle{margin-top:15px;border-top:1px solid #deeadc;padding-top:12px;font-size:12px;color:#748578}
+.v14-profile-list{display:grid;gap:12px}
+.v14-profile{padding:17px 18px;border:1px solid #e0e9dd;background:#f8faf6;border-radius:10px;display:flex;justify-content:space-between;align-items:center;gap:15px}
+.v14-profile h3{margin:0 0 6px;font-size:17px;color:#37664c}
+.v14-profile p{margin:0;font-size:12px;color:#849084}
+.v14-profile-actions{display:flex;gap:6px;flex-shrink:0}
+.v14-empty{padding:40px 12px;text-align:center;color:#728174;border:1px dashed #cedbce;border-radius:11px}
+.v14-empty p{font-size:13px;margin-top:7px}
+.v14-reading{padding:24px;background:#fbf6e9;border-radius:10px;margin-top:20px;line-height:1.9}
+@media(max-width:600px){.tabs{grid-template-columns:repeat(4,minmax(0,1fr))}.tab{font-size:12px}.v14-people{grid-template-columns:1fr}.v14-profile{align-items:flex-start;flex-direction:column}}
+
+.v14-time{margin:13px 0;padding:15px;border:1px solid #e0eadf;border-radius:10px}.v14-time summary{font-size:13px;color:#47735a;font-weight:700;cursor:pointer}.v14-time .twocol{margin-top:15px}
+
+.v14-profile-sync{display:inline-block;margin-left:6px;padding:2px 7px;border-radius:999px;background:#edf3ed;color:#647568;font-size:10px;font-weight:600;vertical-align:middle}

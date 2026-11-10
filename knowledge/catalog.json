@@ -1,0 +1,2807 @@
+{
+  "version": "1.2.0",
+  "policy": "本知识库包含自主撰写的象意摘要，不代表古籍逐字原文。只有 verifiedQuotes 标记为已核对的短引文，其余 sourceIds 为来源主题索引而非逐句引证。传统术数不构成可验证的未来预测。",
+  "sources": [
+    {
+      "id": "zhouyi",
+      "title": "周易",
+      "url": "https://ctext.org/book-of-changes/zh",
+      "locator": "六十四卦与经传目录",
+      "verification": "source-verified",
+      "note": "原文来源已核实；本项目卦义为独立概括，未逐条校对爻辞"
+    },
+    {
+      "id": "meihua",
+      "title": "梅花易数",
+      "url": "https://zh.wikisource.org/zh-hans/梅花易数",
+      "locator": "卷一·卦以八除/爻以六除；卷二·体用生克",
+      "verification": "source-verified",
+      "note": "目录结构已核实；三数起卦与体用生克由本项目明确限定口径"
+    },
+    {
+      "id": "ditiansui",
+      "title": "滴天髓",
+      "url": "https://zh.wikisource.org/zh-hans/滴天髓",
+      "locator": "月令论、天干论、寒暖论",
+      "verification": "source-verified",
+      "note": "章节存在已核实；现代解读为本项目作者概括"
+    },
+    {
+      "id": "ziping",
+      "title": "子平真诠",
+      "url": "https://libokang.com/zh-hant/classics/bazi/子平真詮原文/",
+      "locator": "论用神、月令格局相关章节",
+      "verification": "secondary-source",
+      "note": "第三方原文整理与译注，并非版本校勘结论"
+    },
+    {
+      "id": "sanming",
+      "title": "三命通会",
+      "url": "https://zh.wikisource.org/zh-hans/三命通會",
+      "locator": "卷一至卷九目录",
+      "verification": "source-verified",
+      "note": "文献索引；维基文库缺卷十至十二，不强行伪造引文"
+    },
+    {
+      "id": "ziwei-book",
+      "title": "紫微斗数（续道藏本）",
+      "url": "https://zh.wikisource.org/zh-hant/紫微斗數",
+      "locator": "卷之一至三",
+      "verification": "source-verified",
+      "note": "用于知识索引；不同排盘流派和现代 iztro 实现未必完全一致"
+    },
+    {
+      "id": "iztro",
+      "title": "iztro 开源排盘文档",
+      "url": "https://docs.iztro.com/quick-start",
+      "locator": "通过阳历排盘 API",
+      "verification": "documentation",
+      "note": "紫微确定性排盘来源，非古籍"
+    },
+    {
+      "id": "lunar",
+      "title": "lunar-typescript 开源历法库",
+      "url": "https://github.com/6tail/lunar-typescript",
+      "locator": "八字与节气 API",
+      "verification": "documentation",
+      "note": "计算实现来源，非古籍"
+    }
+  ],
+  "hexagrams": [
+    {
+      "id": "hexagram-1",
+      "number": 1,
+      "name": "乾为天",
+      "theme": "开创与自强",
+      "reflection": "先明确方向，再检查自身资源和边界",
+      "status": "original-summary",
+      "sourceIds": [
+        "zhouyi"
+      ]
+    },
+    {
+      "id": "hexagram-2",
+      "number": 2,
+      "name": "坤为地",
+      "theme": "承载与协作",
+      "reflection": "厘清支持条件，不必急于争先",
+      "status": "original-summary",
+      "sourceIds": [
+        "zhouyi"
+      ]
+    },
+    {
+      "id": "hexagram-3",
+      "number": 3,
+      "name": "水雷屯",
+      "theme": "开始阶段的困难",
+      "reflection": "先搭建基础，允许过程曲折",
+      "status": "original-summary",
+      "sourceIds": [
+        "zhouyi"
+      ]
+    },
+    {
+      "id": "hexagram-4",
+      "number": 4,
+      "name": "山水蒙",
+      "theme": "启蒙与求教",
+      "reflection": "识别信息缺口，再寻求有经验者的反馈",
+      "status": "original-summary",
+      "sourceIds": [
+        "zhouyi"
+      ]
+    },
+    {
+      "id": "hexagram-5",
+      "number": 5,
+      "name": "水天需",
+      "theme": "等待与准备",
+      "reflection": "预留缓冲，避免在条件不足时强推",
+      "status": "original-summary",
+      "sourceIds": [
+        "zhouyi"
+      ]
+    },
+    {
+      "id": "hexagram-6",
+      "number": 6,
+      "name": "天水讼",
+      "theme": "争议与界限",
+      "reflection": "先核事实和规则，优先沟通而非升级对抗",
+      "status": "original-summary",
+      "sourceIds": [
+        "zhouyi"
+      ]
+    },
+    {
+      "id": "hexagram-7",
+      "number": 7,
+      "name": "地水师",
+      "theme": "组织与纪律",
+      "reflection": "明确职责分工与共同规则",
+      "status": "original-summary",
+      "sourceIds": [
+        "zhouyi"
+      ]
+    },
+    {
+      "id": "hexagram-8",
+      "number": 8,
+      "name": "水地比",
+      "theme": "亲近与结盟",
+      "reflection": "审视合作双方是否真正互信",
+      "status": "original-summary",
+      "sourceIds": [
+        "zhouyi"
+      ]
+    },
+    {
+      "id": "hexagram-9",
+      "number": 9,
+      "name": "风天小畜",
+      "theme": "渐进积累",
+      "reflection": "把大目标拆成可以持续推进的小步",
+      "status": "original-summary",
+      "sourceIds": [
+        "zhouyi"
+      ]
+    },
+    {
+      "id": "hexagram-10",
+      "number": 10,
+      "name": "天泽履",
+      "theme": "谨慎行动",
+      "reflection": "把握分寸，尤其注意过程与承诺",
+      "status": "original-summary",
+      "sourceIds": [
+        "zhouyi"
+      ]
+    },
+    {
+      "id": "hexagram-11",
+      "number": 11,
+      "name": "地天泰",
+      "theme": "通达与配合",
+      "reflection": "珍惜配合顺畅时的维护工作",
+      "status": "original-summary",
+      "sourceIds": [
+        "zhouyi"
+      ]
+    },
+    {
+      "id": "hexagram-12",
+      "number": 12,
+      "name": "天地否",
+      "theme": "阻隔与失联",
+      "reflection": "分析沟通和资源的断点，考虑调整路径",
+      "status": "original-summary",
+      "sourceIds": [
+        "zhouyi"
+      ]
+    },
+    {
+      "id": "hexagram-13",
+      "number": 13,
+      "name": "天火同人",
+      "theme": "求同与协作",
+      "reflection": "围绕共同目标而非表面一致开展合作",
+      "status": "original-summary",
+      "sourceIds": [
+        "zhouyi"
+      ]
+    },
+    {
+      "id": "hexagram-14",
+      "number": 14,
+      "name": "火天大有",
+      "theme": "资源与责任",
+      "reflection": "有资源时也要考虑分配和持续性",
+      "status": "original-summary",
+      "sourceIds": [
+        "zhouyi"
+      ]
+    },
+    {
+      "id": "hexagram-15",
+      "number": 15,
+      "name": "地山谦",
+      "theme": "谦逊与节制",
+      "reflection": "保留学习空间，避免只用一种视角判断",
+      "status": "original-summary",
+      "sourceIds": [
+        "zhouyi"
+      ]
+    },
+    {
+      "id": "hexagram-16",
+      "number": 16,
+      "name": "雷地豫",
+      "theme": "准备与动员",
+      "reflection": "热情之外还需清晰计划",
+      "status": "original-summary",
+      "sourceIds": [
+        "zhouyi"
+      ]
+    },
+    {
+      "id": "hexagram-17",
+      "number": 17,
+      "name": "泽雷随",
+      "theme": "顺势与适应",
+      "reflection": "辨认变化中的核心原则",
+      "status": "original-summary",
+      "sourceIds": [
+        "zhouyi"
+      ]
+    },
+    {
+      "id": "hexagram-18",
+      "number": 18,
+      "name": "山风蛊",
+      "theme": "整顿与修复",
+      "reflection": "检查旧问题的根因，不只处理表象",
+      "status": "original-summary",
+      "sourceIds": [
+        "zhouyi"
+      ]
+    },
+    {
+      "id": "hexagram-19",
+      "number": 19,
+      "name": "地泽临",
+      "theme": "临近与观察",
+      "reflection": "接近机会时保持对细节的观察",
+      "status": "original-summary",
+      "sourceIds": [
+        "zhouyi"
+      ]
+    },
+    {
+      "id": "hexagram-20",
+      "number": 20,
+      "name": "风地观",
+      "theme": "审视与反思",
+      "reflection": "先形成可靠全貌，再选择干预方式",
+      "status": "original-summary",
+      "sourceIds": [
+        "zhouyi"
+      ]
+    },
+    {
+      "id": "hexagram-21",
+      "number": 21,
+      "name": "火雷噬嗑",
+      "theme": "处理障碍",
+      "reflection": "把纠结的问题拆解成可验证的环节",
+      "status": "original-summary",
+      "sourceIds": [
+        "zhouyi"
+      ]
+    },
+    {
+      "id": "hexagram-22",
+      "number": 22,
+      "name": "山火贲",
+      "theme": "形式与内容",
+      "reflection": "外在呈现应服务于真实价值",
+      "status": "original-summary",
+      "sourceIds": [
+        "zhouyi"
+      ]
+    },
+    {
+      "id": "hexagram-23",
+      "number": 23,
+      "name": "山地剥",
+      "theme": "收缩与保护",
+      "reflection": "识别应该暂停或缩减的部分",
+      "status": "original-summary",
+      "sourceIds": [
+        "zhouyi"
+      ]
+    },
+    {
+      "id": "hexagram-24",
+      "number": 24,
+      "name": "地雷复",
+      "theme": "回归与复盘",
+      "reflection": "回到核心目的，修正已经偏离的轨道",
+      "status": "original-summary",
+      "sourceIds": [
+        "zhouyi"
+      ]
+    },
+    {
+      "id": "hexagram-25",
+      "number": 25,
+      "name": "天雷无妄",
+      "theme": "真实与谨慎",
+      "reflection": "避免无充分依据的假定",
+      "status": "original-summary",
+      "sourceIds": [
+        "zhouyi"
+      ]
+    },
+    {
+      "id": "hexagram-26",
+      "number": 26,
+      "name": "山天大畜",
+      "theme": "积累与蓄势",
+      "reflection": "把能力与资源储备放在眼前",
+      "status": "original-summary",
+      "sourceIds": [
+        "zhouyi"
+      ]
+    },
+    {
+      "id": "hexagram-27",
+      "number": 27,
+      "name": "山雷颐",
+      "theme": "养护与供给",
+      "reflection": "关注精力、沟通与资源供给",
+      "status": "original-summary",
+      "sourceIds": [
+        "zhouyi"
+      ]
+    },
+    {
+      "id": "hexagram-28",
+      "number": 28,
+      "name": "泽风大过",
+      "theme": "压力与承重",
+      "reflection": "识别负担是否已超过系统承受范围",
+      "status": "original-summary",
+      "sourceIds": [
+        "zhouyi"
+      ]
+    },
+    {
+      "id": "hexagram-29",
+      "number": 29,
+      "name": "坎为水",
+      "theme": "重重障碍",
+      "reflection": "设立安全余量，避免一次性押注",
+      "status": "original-summary",
+      "sourceIds": [
+        "zhouyi"
+      ]
+    },
+    {
+      "id": "hexagram-30",
+      "number": 30,
+      "name": "离为火",
+      "theme": "明晰与依附",
+      "reflection": "核对信息来源，也留意支撑条件",
+      "status": "original-summary",
+      "sourceIds": [
+        "zhouyi"
+      ]
+    },
+    {
+      "id": "hexagram-31",
+      "number": 31,
+      "name": "泽山咸",
+      "theme": "感应与交流",
+      "reflection": "倾听反馈，避免单方面解读",
+      "status": "original-summary",
+      "sourceIds": [
+        "zhouyi"
+      ]
+    },
+    {
+      "id": "hexagram-32",
+      "number": 32,
+      "name": "雷风恒",
+      "theme": "稳定与持续",
+      "reflection": "建立可以重复执行的节奏",
+      "status": "original-summary",
+      "sourceIds": [
+        "zhouyi"
+      ]
+    },
+    {
+      "id": "hexagram-33",
+      "number": 33,
+      "name": "天山遁",
+      "theme": "主动退让",
+      "reflection": "评估什么时候退出更能保全选择权",
+      "status": "original-summary",
+      "sourceIds": [
+        "zhouyi"
+      ]
+    },
+    {
+      "id": "hexagram-34",
+      "number": 34,
+      "name": "雷天大壮",
+      "theme": "力量与节制",
+      "reflection": "能力提升时同样需要约束",
+      "status": "original-summary",
+      "sourceIds": [
+        "zhouyi"
+      ]
+    },
+    {
+      "id": "hexagram-35",
+      "number": 35,
+      "name": "火地晋",
+      "theme": "进展与呈现",
+      "reflection": "展示成果，也留意目标是否偏移",
+      "status": "original-summary",
+      "sourceIds": [
+        "zhouyi"
+      ]
+    },
+    {
+      "id": "hexagram-36",
+      "number": 36,
+      "name": "地火明夷",
+      "theme": "遮蔽与保护",
+      "reflection": "在信息不明时减少暴露与风险",
+      "status": "original-summary",
+      "sourceIds": [
+        "zhouyi"
+      ]
+    },
+    {
+      "id": "hexagram-37",
+      "number": 37,
+      "name": "风火家人",
+      "theme": "内部角色与秩序",
+      "reflection": "厘清家庭或团队中的期待与责任",
+      "status": "original-summary",
+      "sourceIds": [
+        "zhouyi"
+      ]
+    },
+    {
+      "id": "hexagram-38",
+      "number": 38,
+      "name": "火泽睽",
+      "theme": "分歧与差异",
+      "reflection": "先理解差异所在，不强求立即一致",
+      "status": "original-summary",
+      "sourceIds": [
+        "zhouyi"
+      ]
+    },
+    {
+      "id": "hexagram-39",
+      "number": 39,
+      "name": "水山蹇",
+      "theme": "受阻与转道",
+      "reflection": "检查阻力来源，考虑绕行或求助",
+      "status": "original-summary",
+      "sourceIds": [
+        "zhouyi"
+      ]
+    },
+    {
+      "id": "hexagram-40",
+      "number": 40,
+      "name": "雷水解",
+      "theme": "疏通与松绑",
+      "reflection": "找到关键阻塞点后再逐项解除",
+      "status": "original-summary",
+      "sourceIds": [
+        "zhouyi"
+      ]
+    },
+    {
+      "id": "hexagram-41",
+      "number": 41,
+      "name": "山泽损",
+      "theme": "有意识地减少",
+      "reflection": "优先减少无效负担而非盲目扩张",
+      "status": "original-summary",
+      "sourceIds": [
+        "zhouyi"
+      ]
+    },
+    {
+      "id": "hexagram-42",
+      "number": 42,
+      "name": "风雷益",
+      "theme": "增益与互利",
+      "reflection": "问清增长能否兼顾各方需要",
+      "status": "original-summary",
+      "sourceIds": [
+        "zhouyi"
+      ]
+    },
+    {
+      "id": "hexagram-43",
+      "number": 43,
+      "name": "泽天夬",
+      "theme": "作出决定",
+      "reflection": "决定前明确依据，避免以情绪替代判断",
+      "status": "original-summary",
+      "sourceIds": [
+        "zhouyi"
+      ]
+    },
+    {
+      "id": "hexagram-44",
+      "number": 44,
+      "name": "天风姤",
+      "theme": "突然而来的相遇",
+      "reflection": "识别短期诱因与长期影响",
+      "status": "original-summary",
+      "sourceIds": [
+        "zhouyi"
+      ]
+    },
+    {
+      "id": "hexagram-45",
+      "number": 45,
+      "name": "泽地萃",
+      "theme": "汇聚与组织",
+      "reflection": "聚焦共同目标，明确协作机制",
+      "status": "original-summary",
+      "sourceIds": [
+        "zhouyi"
+      ]
+    },
+    {
+      "id": "hexagram-46",
+      "number": 46,
+      "name": "地风升",
+      "theme": "稳步提升",
+      "reflection": "重视长期训练和实践反馈",
+      "status": "original-summary",
+      "sourceIds": [
+        "zhouyi"
+      ]
+    },
+    {
+      "id": "hexagram-47",
+      "number": 47,
+      "name": "泽水困",
+      "theme": "受限与承压",
+      "reflection": "首先区分可控和不可控的因素",
+      "status": "original-summary",
+      "sourceIds": [
+        "zhouyi"
+      ]
+    },
+    {
+      "id": "hexagram-48",
+      "number": 48,
+      "name": "水风井",
+      "theme": "稳定的基础资源",
+      "reflection": "回顾哪些基础资源可以长期维护",
+      "status": "original-summary",
+      "sourceIds": [
+        "zhouyi"
+      ]
+    },
+    {
+      "id": "hexagram-49",
+      "number": 49,
+      "name": "泽火革",
+      "theme": "改革与更替",
+      "reflection": "确认变革必要性，并安排平稳过渡",
+      "status": "original-summary",
+      "sourceIds": [
+        "zhouyi"
+      ]
+    },
+    {
+      "id": "hexagram-50",
+      "number": 50,
+      "name": "火风鼎",
+      "theme": "更新与协同",
+      "reflection": "调整结构时兼顾各部分功能",
+      "status": "original-summary",
+      "sourceIds": [
+        "zhouyi"
+      ]
+    },
+    {
+      "id": "hexagram-51",
+      "number": 51,
+      "name": "震为雷",
+      "theme": "突发与觉醒",
+      "reflection": "面对变化先稳定行动节奏",
+      "status": "original-summary",
+      "sourceIds": [
+        "zhouyi"
+      ]
+    },
+    {
+      "id": "hexagram-52",
+      "number": 52,
+      "name": "艮为山",
+      "theme": "止步与边界",
+      "reflection": "识别何时需要停止或划清界线",
+      "status": "original-summary",
+      "sourceIds": [
+        "zhouyi"
+      ]
+    },
+    {
+      "id": "hexagram-53",
+      "number": 53,
+      "name": "风山渐",
+      "theme": "循序渐进",
+      "reflection": "给关系和计划留出自然发展时间",
+      "status": "original-summary",
+      "sourceIds": [
+        "zhouyi"
+      ]
+    },
+    {
+      "id": "hexagram-54",
+      "number": 54,
+      "name": "雷泽归妹",
+      "theme": "关系与角色错位",
+      "reflection": "检查双方期待和角色定义是否清晰",
+      "status": "original-summary",
+      "sourceIds": [
+        "zhouyi"
+      ]
+    },
+    {
+      "id": "hexagram-55",
+      "number": 55,
+      "name": "雷火丰",
+      "theme": "盛大与复杂",
+      "reflection": "资源充足时尤其需要控制复杂度",
+      "status": "original-summary",
+      "sourceIds": [
+        "zhouyi"
+      ]
+    },
+    {
+      "id": "hexagram-56",
+      "number": 56,
+      "name": "火山旅",
+      "theme": "在外与临时状态",
+      "reflection": "优先保障基本条件和退路",
+      "status": "original-summary",
+      "sourceIds": [
+        "zhouyi"
+      ]
+    },
+    {
+      "id": "hexagram-57",
+      "number": 57,
+      "name": "巽为风",
+      "theme": "柔顺与渗透",
+      "reflection": "以持续的小调整形成影响",
+      "status": "original-summary",
+      "sourceIds": [
+        "zhouyi"
+      ]
+    },
+    {
+      "id": "hexagram-58",
+      "number": 58,
+      "name": "兑为泽",
+      "theme": "喜悦与沟通",
+      "reflection": "沟通中的友善需要与诚实并行",
+      "status": "original-summary",
+      "sourceIds": [
+        "zhouyi"
+      ]
+    },
+    {
+      "id": "hexagram-59",
+      "number": 59,
+      "name": "风水涣",
+      "theme": "分散与重新联结",
+      "reflection": "重建共同目标和清晰沟通",
+      "status": "original-summary",
+      "sourceIds": [
+        "zhouyi"
+      ]
+    },
+    {
+      "id": "hexagram-60",
+      "number": 60,
+      "name": "水泽节",
+      "theme": "约束与尺度",
+      "reflection": "明确规则与节奏，避免过度限制",
+      "status": "original-summary",
+      "sourceIds": [
+        "zhouyi"
+      ]
+    },
+    {
+      "id": "hexagram-61",
+      "number": 61,
+      "name": "风泽中孚",
+      "theme": "诚信与互信",
+      "reflection": "用可验证行动建立互信",
+      "status": "original-summary",
+      "sourceIds": [
+        "zhouyi"
+      ]
+    },
+    {
+      "id": "hexagram-62",
+      "number": 62,
+      "name": "雷山小过",
+      "theme": "小事可行与谨慎",
+      "reflection": "从低风险的小步骤入手",
+      "status": "original-summary",
+      "sourceIds": [
+        "zhouyi"
+      ]
+    },
+    {
+      "id": "hexagram-63",
+      "number": 63,
+      "name": "水火既济",
+      "theme": "阶段完成后的维护",
+      "reflection": "完成不等于结束，注意复盘维护",
+      "status": "original-summary",
+      "sourceIds": [
+        "zhouyi"
+      ]
+    },
+    {
+      "id": "hexagram-64",
+      "number": 64,
+      "name": "火水未济",
+      "theme": "未完成与持续演化",
+      "reflection": "承认尚未完结，逐步补全条件",
+      "status": "original-summary",
+      "sourceIds": [
+        "zhouyi"
+      ]
+    }
+  ],
+  "stems": {
+    "甲": {
+      "element": "阳木",
+      "symbol": "树木向上生长的象征",
+      "prompt": "观察长期方向和原则"
+    },
+    "乙": {
+      "element": "阴木",
+      "symbol": "藤草与柔韧生长的象征",
+      "prompt": "观察灵活协作和适应"
+    },
+    "丙": {
+      "element": "阳火",
+      "symbol": "日光与外显能量的象征",
+      "prompt": "观察如何让信息更清楚"
+    },
+    "丁": {
+      "element": "阴火",
+      "symbol": "灯火与细密照明的象征",
+      "prompt": "关注专注投入与持续维护"
+    },
+    "戊": {
+      "element": "阳土",
+      "symbol": "高山厚土、承载之象",
+      "prompt": "检查稳定性与责任边界"
+    },
+    "己": {
+      "element": "阴土",
+      "symbol": "田园培植、整理之象",
+      "prompt": "关注细节与资源培育"
+    },
+    "庚": {
+      "element": "阳金",
+      "symbol": "金属锻造、决断之象",
+      "prompt": "观察边界与执行力度"
+    },
+    "辛": {
+      "element": "阴金",
+      "symbol": "精工细琢、辨析之象",
+      "prompt": "重视质量与具体标准"
+    },
+    "壬": {
+      "element": "阳水",
+      "symbol": "江河流动、联通之象",
+      "prompt": "留意信息流动与变通"
+    },
+    "癸": {
+      "element": "阴水",
+      "symbol": "雨露润泽、渗透之象",
+      "prompt": "重视耐心与环境反馈"
+    }
+  },
+  "tenGods": {
+    "比肩": "同类与自我主张的象征；可用于讨论协同和独立的平衡",
+    "劫财": "同伴、竞争和资源分配的象征；可用于思考边界与合作",
+    "食神": "表达、产出和滋养的象征；可用于讨论稳定创造",
+    "伤官": "表达、质疑和突破的象征；可用于讨论创新与规则",
+    "偏财": "资源调配与机会选择的象征；不代表实际收入",
+    "正财": "秩序化的资源管理的象征；不代表个人财富金额",
+    "七杀": "外部压力、竞争与挑战的象征；不等于必有危险",
+    "偏官": "七杀的另一种称呼，传统流派称谓略有不同",
+    "正官": "规则、角色责任和社会秩序的象征；不等于职业地位",
+    "偏印": "非标准学习、吸收和思维方式的象征；不等于性格诊断",
+    "枭神": "偏印的传统别称，使用条件因流派不同",
+    "正印": "学习、支持和知识传承的象征；不等于学历判断"
+  },
+  "elements": {
+    "木": "生长、规划与更新的传统类象",
+    "火": "表达、温度与外显的传统类象",
+    "土": "承载、管理与稳定的传统类象",
+    "金": "结构、界线与整合的传统类象",
+    "水": "流动、联结与适应的传统类象"
+  },
+  "stars": {
+    "紫微": "统筹、组织与责任的传统类象",
+    "天机": "思考、设计与变化的传统类象",
+    "太阳": "外显、照应与行动的传统类象",
+    "武曲": "纪律、执行与资源管理的传统类象",
+    "天同": "和缓、体验与调适的传统类象",
+    "廉贞": "原则、辨析与人际分寸的传统类象",
+    "天府": "储备、统筹与稳健的传统类象",
+    "太阴": "内省、积累与细腻的传统类象",
+    "贪狼": "探索、社交与兴趣的传统类象",
+    "巨门": "表达、质询与观点分歧的传统类象",
+    "天相": "协调、程序与合作的传统类象",
+    "天梁": "守护、原则与长程责任的传统类象",
+    "七杀": "决断、变化与承压的传统类象",
+    "破军": "更新、重组与突破旧结构的传统类象"
+  },
+  "palaces": {
+    "命宫": "传统上用来讨论自我呈现与行为方式",
+    "兄弟": "传统上用于讨论手足及同辈互动",
+    "夫妻": "传统上用于讨论亲密关系中的相处模式",
+    "子女": "传统上用于讨论养育、创造与代际交流",
+    "财帛": "传统上用于讨论资源管理和价值交换",
+    "疾厄": "传统上用于讨论身体照护的象征，并非医疗判断",
+    "迁移": "传统上用于讨论外部环境、迁动和对外联系",
+    "交友": "传统上用于讨论社交与合作网络",
+    "仆役": "交友宫的传统称呼",
+    "官禄": "传统上用于讨论工作角色、职责与事业安排",
+    "事业": "官禄宫的通俗称呼",
+    "田宅": "传统上用于讨论居住空间、资产与家庭基础",
+    "福德": "传统上用于讨论心理感受、休闲与内在资源",
+    "父母": "传统上用于讨论上一代及外部支持关系"
+  },
+  "trigrams": {
+    "乾": "天，阳健之象",
+    "兑": "泽，交流与喜悦之象",
+    "离": "火，明晰与依附之象",
+    "震": "雷，发动与变化之象",
+    "巽": "风，柔顺与渗透之象",
+    "坎": "水，险阻与流动之象",
+    "艮": "山，停止与节制之象",
+    "坤": "地，承载与柔顺之象"
+  },
+  "concepts": [
+    {
+      "id": "hexagram-1",
+      "domain": "iching",
+      "name": "乾为天",
+      "keywords": [
+        "乾为天",
+        "开创与自强",
+        "1"
+      ],
+      "summary": "开创与自强。先明确方向，再检查自身资源和边界。",
+      "sourceIds": [
+        "zhouyi"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "hexagram-2",
+      "domain": "iching",
+      "name": "坤为地",
+      "keywords": [
+        "坤为地",
+        "承载与协作",
+        "2"
+      ],
+      "summary": "承载与协作。厘清支持条件，不必急于争先。",
+      "sourceIds": [
+        "zhouyi"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "hexagram-3",
+      "domain": "iching",
+      "name": "水雷屯",
+      "keywords": [
+        "水雷屯",
+        "开始阶段的困难",
+        "3"
+      ],
+      "summary": "开始阶段的困难。先搭建基础，允许过程曲折。",
+      "sourceIds": [
+        "zhouyi"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "hexagram-4",
+      "domain": "iching",
+      "name": "山水蒙",
+      "keywords": [
+        "山水蒙",
+        "启蒙与求教",
+        "4"
+      ],
+      "summary": "启蒙与求教。识别信息缺口，再寻求有经验者的反馈。",
+      "sourceIds": [
+        "zhouyi"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "hexagram-5",
+      "domain": "iching",
+      "name": "水天需",
+      "keywords": [
+        "水天需",
+        "等待与准备",
+        "5"
+      ],
+      "summary": "等待与准备。预留缓冲，避免在条件不足时强推。",
+      "sourceIds": [
+        "zhouyi"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "hexagram-6",
+      "domain": "iching",
+      "name": "天水讼",
+      "keywords": [
+        "天水讼",
+        "争议与界限",
+        "6"
+      ],
+      "summary": "争议与界限。先核事实和规则，优先沟通而非升级对抗。",
+      "sourceIds": [
+        "zhouyi"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "hexagram-7",
+      "domain": "iching",
+      "name": "地水师",
+      "keywords": [
+        "地水师",
+        "组织与纪律",
+        "7"
+      ],
+      "summary": "组织与纪律。明确职责分工与共同规则。",
+      "sourceIds": [
+        "zhouyi"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "hexagram-8",
+      "domain": "iching",
+      "name": "水地比",
+      "keywords": [
+        "水地比",
+        "亲近与结盟",
+        "8"
+      ],
+      "summary": "亲近与结盟。审视合作双方是否真正互信。",
+      "sourceIds": [
+        "zhouyi"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "hexagram-9",
+      "domain": "iching",
+      "name": "风天小畜",
+      "keywords": [
+        "风天小畜",
+        "渐进积累",
+        "9"
+      ],
+      "summary": "渐进积累。把大目标拆成可以持续推进的小步。",
+      "sourceIds": [
+        "zhouyi"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "hexagram-10",
+      "domain": "iching",
+      "name": "天泽履",
+      "keywords": [
+        "天泽履",
+        "谨慎行动",
+        "10"
+      ],
+      "summary": "谨慎行动。把握分寸，尤其注意过程与承诺。",
+      "sourceIds": [
+        "zhouyi"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "hexagram-11",
+      "domain": "iching",
+      "name": "地天泰",
+      "keywords": [
+        "地天泰",
+        "通达与配合",
+        "11"
+      ],
+      "summary": "通达与配合。珍惜配合顺畅时的维护工作。",
+      "sourceIds": [
+        "zhouyi"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "hexagram-12",
+      "domain": "iching",
+      "name": "天地否",
+      "keywords": [
+        "天地否",
+        "阻隔与失联",
+        "12"
+      ],
+      "summary": "阻隔与失联。分析沟通和资源的断点，考虑调整路径。",
+      "sourceIds": [
+        "zhouyi"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "hexagram-13",
+      "domain": "iching",
+      "name": "天火同人",
+      "keywords": [
+        "天火同人",
+        "求同与协作",
+        "13"
+      ],
+      "summary": "求同与协作。围绕共同目标而非表面一致开展合作。",
+      "sourceIds": [
+        "zhouyi"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "hexagram-14",
+      "domain": "iching",
+      "name": "火天大有",
+      "keywords": [
+        "火天大有",
+        "资源与责任",
+        "14"
+      ],
+      "summary": "资源与责任。有资源时也要考虑分配和持续性。",
+      "sourceIds": [
+        "zhouyi"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "hexagram-15",
+      "domain": "iching",
+      "name": "地山谦",
+      "keywords": [
+        "地山谦",
+        "谦逊与节制",
+        "15"
+      ],
+      "summary": "谦逊与节制。保留学习空间，避免只用一种视角判断。",
+      "sourceIds": [
+        "zhouyi"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "hexagram-16",
+      "domain": "iching",
+      "name": "雷地豫",
+      "keywords": [
+        "雷地豫",
+        "准备与动员",
+        "16"
+      ],
+      "summary": "准备与动员。热情之外还需清晰计划。",
+      "sourceIds": [
+        "zhouyi"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "hexagram-17",
+      "domain": "iching",
+      "name": "泽雷随",
+      "keywords": [
+        "泽雷随",
+        "顺势与适应",
+        "17"
+      ],
+      "summary": "顺势与适应。辨认变化中的核心原则。",
+      "sourceIds": [
+        "zhouyi"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "hexagram-18",
+      "domain": "iching",
+      "name": "山风蛊",
+      "keywords": [
+        "山风蛊",
+        "整顿与修复",
+        "18"
+      ],
+      "summary": "整顿与修复。检查旧问题的根因，不只处理表象。",
+      "sourceIds": [
+        "zhouyi"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "hexagram-19",
+      "domain": "iching",
+      "name": "地泽临",
+      "keywords": [
+        "地泽临",
+        "临近与观察",
+        "19"
+      ],
+      "summary": "临近与观察。接近机会时保持对细节的观察。",
+      "sourceIds": [
+        "zhouyi"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "hexagram-20",
+      "domain": "iching",
+      "name": "风地观",
+      "keywords": [
+        "风地观",
+        "审视与反思",
+        "20"
+      ],
+      "summary": "审视与反思。先形成可靠全貌，再选择干预方式。",
+      "sourceIds": [
+        "zhouyi"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "hexagram-21",
+      "domain": "iching",
+      "name": "火雷噬嗑",
+      "keywords": [
+        "火雷噬嗑",
+        "处理障碍",
+        "21"
+      ],
+      "summary": "处理障碍。把纠结的问题拆解成可验证的环节。",
+      "sourceIds": [
+        "zhouyi"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "hexagram-22",
+      "domain": "iching",
+      "name": "山火贲",
+      "keywords": [
+        "山火贲",
+        "形式与内容",
+        "22"
+      ],
+      "summary": "形式与内容。外在呈现应服务于真实价值。",
+      "sourceIds": [
+        "zhouyi"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "hexagram-23",
+      "domain": "iching",
+      "name": "山地剥",
+      "keywords": [
+        "山地剥",
+        "收缩与保护",
+        "23"
+      ],
+      "summary": "收缩与保护。识别应该暂停或缩减的部分。",
+      "sourceIds": [
+        "zhouyi"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "hexagram-24",
+      "domain": "iching",
+      "name": "地雷复",
+      "keywords": [
+        "地雷复",
+        "回归与复盘",
+        "24"
+      ],
+      "summary": "回归与复盘。回到核心目的，修正已经偏离的轨道。",
+      "sourceIds": [
+        "zhouyi"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "hexagram-25",
+      "domain": "iching",
+      "name": "天雷无妄",
+      "keywords": [
+        "天雷无妄",
+        "真实与谨慎",
+        "25"
+      ],
+      "summary": "真实与谨慎。避免无充分依据的假定。",
+      "sourceIds": [
+        "zhouyi"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "hexagram-26",
+      "domain": "iching",
+      "name": "山天大畜",
+      "keywords": [
+        "山天大畜",
+        "积累与蓄势",
+        "26"
+      ],
+      "summary": "积累与蓄势。把能力与资源储备放在眼前。",
+      "sourceIds": [
+        "zhouyi"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "hexagram-27",
+      "domain": "iching",
+      "name": "山雷颐",
+      "keywords": [
+        "山雷颐",
+        "养护与供给",
+        "27"
+      ],
+      "summary": "养护与供给。关注精力、沟通与资源供给。",
+      "sourceIds": [
+        "zhouyi"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "hexagram-28",
+      "domain": "iching",
+      "name": "泽风大过",
+      "keywords": [
+        "泽风大过",
+        "压力与承重",
+        "28"
+      ],
+      "summary": "压力与承重。识别负担是否已超过系统承受范围。",
+      "sourceIds": [
+        "zhouyi"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "hexagram-29",
+      "domain": "iching",
+      "name": "坎为水",
+      "keywords": [
+        "坎为水",
+        "重重障碍",
+        "29"
+      ],
+      "summary": "重重障碍。设立安全余量，避免一次性押注。",
+      "sourceIds": [
+        "zhouyi"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "hexagram-30",
+      "domain": "iching",
+      "name": "离为火",
+      "keywords": [
+        "离为火",
+        "明晰与依附",
+        "30"
+      ],
+      "summary": "明晰与依附。核对信息来源，也留意支撑条件。",
+      "sourceIds": [
+        "zhouyi"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "hexagram-31",
+      "domain": "iching",
+      "name": "泽山咸",
+      "keywords": [
+        "泽山咸",
+        "感应与交流",
+        "31"
+      ],
+      "summary": "感应与交流。倾听反馈，避免单方面解读。",
+      "sourceIds": [
+        "zhouyi"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "hexagram-32",
+      "domain": "iching",
+      "name": "雷风恒",
+      "keywords": [
+        "雷风恒",
+        "稳定与持续",
+        "32"
+      ],
+      "summary": "稳定与持续。建立可以重复执行的节奏。",
+      "sourceIds": [
+        "zhouyi"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "hexagram-33",
+      "domain": "iching",
+      "name": "天山遁",
+      "keywords": [
+        "天山遁",
+        "主动退让",
+        "33"
+      ],
+      "summary": "主动退让。评估什么时候退出更能保全选择权。",
+      "sourceIds": [
+        "zhouyi"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "hexagram-34",
+      "domain": "iching",
+      "name": "雷天大壮",
+      "keywords": [
+        "雷天大壮",
+        "力量与节制",
+        "34"
+      ],
+      "summary": "力量与节制。能力提升时同样需要约束。",
+      "sourceIds": [
+        "zhouyi"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "hexagram-35",
+      "domain": "iching",
+      "name": "火地晋",
+      "keywords": [
+        "火地晋",
+        "进展与呈现",
+        "35"
+      ],
+      "summary": "进展与呈现。展示成果，也留意目标是否偏移。",
+      "sourceIds": [
+        "zhouyi"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "hexagram-36",
+      "domain": "iching",
+      "name": "地火明夷",
+      "keywords": [
+        "地火明夷",
+        "遮蔽与保护",
+        "36"
+      ],
+      "summary": "遮蔽与保护。在信息不明时减少暴露与风险。",
+      "sourceIds": [
+        "zhouyi"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "hexagram-37",
+      "domain": "iching",
+      "name": "风火家人",
+      "keywords": [
+        "风火家人",
+        "内部角色与秩序",
+        "37"
+      ],
+      "summary": "内部角色与秩序。厘清家庭或团队中的期待与责任。",
+      "sourceIds": [
+        "zhouyi"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "hexagram-38",
+      "domain": "iching",
+      "name": "火泽睽",
+      "keywords": [
+        "火泽睽",
+        "分歧与差异",
+        "38"
+      ],
+      "summary": "分歧与差异。先理解差异所在，不强求立即一致。",
+      "sourceIds": [
+        "zhouyi"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "hexagram-39",
+      "domain": "iching",
+      "name": "水山蹇",
+      "keywords": [
+        "水山蹇",
+        "受阻与转道",
+        "39"
+      ],
+      "summary": "受阻与转道。检查阻力来源，考虑绕行或求助。",
+      "sourceIds": [
+        "zhouyi"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "hexagram-40",
+      "domain": "iching",
+      "name": "雷水解",
+      "keywords": [
+        "雷水解",
+        "疏通与松绑",
+        "40"
+      ],
+      "summary": "疏通与松绑。找到关键阻塞点后再逐项解除。",
+      "sourceIds": [
+        "zhouyi"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "hexagram-41",
+      "domain": "iching",
+      "name": "山泽损",
+      "keywords": [
+        "山泽损",
+        "有意识地减少",
+        "41"
+      ],
+      "summary": "有意识地减少。优先减少无效负担而非盲目扩张。",
+      "sourceIds": [
+        "zhouyi"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "hexagram-42",
+      "domain": "iching",
+      "name": "风雷益",
+      "keywords": [
+        "风雷益",
+        "增益与互利",
+        "42"
+      ],
+      "summary": "增益与互利。问清增长能否兼顾各方需要。",
+      "sourceIds": [
+        "zhouyi"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "hexagram-43",
+      "domain": "iching",
+      "name": "泽天夬",
+      "keywords": [
+        "泽天夬",
+        "作出决定",
+        "43"
+      ],
+      "summary": "作出决定。决定前明确依据，避免以情绪替代判断。",
+      "sourceIds": [
+        "zhouyi"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "hexagram-44",
+      "domain": "iching",
+      "name": "天风姤",
+      "keywords": [
+        "天风姤",
+        "突然而来的相遇",
+        "44"
+      ],
+      "summary": "突然而来的相遇。识别短期诱因与长期影响。",
+      "sourceIds": [
+        "zhouyi"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "hexagram-45",
+      "domain": "iching",
+      "name": "泽地萃",
+      "keywords": [
+        "泽地萃",
+        "汇聚与组织",
+        "45"
+      ],
+      "summary": "汇聚与组织。聚焦共同目标，明确协作机制。",
+      "sourceIds": [
+        "zhouyi"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "hexagram-46",
+      "domain": "iching",
+      "name": "地风升",
+      "keywords": [
+        "地风升",
+        "稳步提升",
+        "46"
+      ],
+      "summary": "稳步提升。重视长期训练和实践反馈。",
+      "sourceIds": [
+        "zhouyi"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "hexagram-47",
+      "domain": "iching",
+      "name": "泽水困",
+      "keywords": [
+        "泽水困",
+        "受限与承压",
+        "47"
+      ],
+      "summary": "受限与承压。首先区分可控和不可控的因素。",
+      "sourceIds": [
+        "zhouyi"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "hexagram-48",
+      "domain": "iching",
+      "name": "水风井",
+      "keywords": [
+        "水风井",
+        "稳定的基础资源",
+        "48"
+      ],
+      "summary": "稳定的基础资源。回顾哪些基础资源可以长期维护。",
+      "sourceIds": [
+        "zhouyi"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "hexagram-49",
+      "domain": "iching",
+      "name": "泽火革",
+      "keywords": [
+        "泽火革",
+        "改革与更替",
+        "49"
+      ],
+      "summary": "改革与更替。确认变革必要性，并安排平稳过渡。",
+      "sourceIds": [
+        "zhouyi"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "hexagram-50",
+      "domain": "iching",
+      "name": "火风鼎",
+      "keywords": [
+        "火风鼎",
+        "更新与协同",
+        "50"
+      ],
+      "summary": "更新与协同。调整结构时兼顾各部分功能。",
+      "sourceIds": [
+        "zhouyi"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "hexagram-51",
+      "domain": "iching",
+      "name": "震为雷",
+      "keywords": [
+        "震为雷",
+        "突发与觉醒",
+        "51"
+      ],
+      "summary": "突发与觉醒。面对变化先稳定行动节奏。",
+      "sourceIds": [
+        "zhouyi"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "hexagram-52",
+      "domain": "iching",
+      "name": "艮为山",
+      "keywords": [
+        "艮为山",
+        "止步与边界",
+        "52"
+      ],
+      "summary": "止步与边界。识别何时需要停止或划清界线。",
+      "sourceIds": [
+        "zhouyi"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "hexagram-53",
+      "domain": "iching",
+      "name": "风山渐",
+      "keywords": [
+        "风山渐",
+        "循序渐进",
+        "53"
+      ],
+      "summary": "循序渐进。给关系和计划留出自然发展时间。",
+      "sourceIds": [
+        "zhouyi"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "hexagram-54",
+      "domain": "iching",
+      "name": "雷泽归妹",
+      "keywords": [
+        "雷泽归妹",
+        "关系与角色错位",
+        "54"
+      ],
+      "summary": "关系与角色错位。检查双方期待和角色定义是否清晰。",
+      "sourceIds": [
+        "zhouyi"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "hexagram-55",
+      "domain": "iching",
+      "name": "雷火丰",
+      "keywords": [
+        "雷火丰",
+        "盛大与复杂",
+        "55"
+      ],
+      "summary": "盛大与复杂。资源充足时尤其需要控制复杂度。",
+      "sourceIds": [
+        "zhouyi"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "hexagram-56",
+      "domain": "iching",
+      "name": "火山旅",
+      "keywords": [
+        "火山旅",
+        "在外与临时状态",
+        "56"
+      ],
+      "summary": "在外与临时状态。优先保障基本条件和退路。",
+      "sourceIds": [
+        "zhouyi"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "hexagram-57",
+      "domain": "iching",
+      "name": "巽为风",
+      "keywords": [
+        "巽为风",
+        "柔顺与渗透",
+        "57"
+      ],
+      "summary": "柔顺与渗透。以持续的小调整形成影响。",
+      "sourceIds": [
+        "zhouyi"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "hexagram-58",
+      "domain": "iching",
+      "name": "兑为泽",
+      "keywords": [
+        "兑为泽",
+        "喜悦与沟通",
+        "58"
+      ],
+      "summary": "喜悦与沟通。沟通中的友善需要与诚实并行。",
+      "sourceIds": [
+        "zhouyi"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "hexagram-59",
+      "domain": "iching",
+      "name": "风水涣",
+      "keywords": [
+        "风水涣",
+        "分散与重新联结",
+        "59"
+      ],
+      "summary": "分散与重新联结。重建共同目标和清晰沟通。",
+      "sourceIds": [
+        "zhouyi"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "hexagram-60",
+      "domain": "iching",
+      "name": "水泽节",
+      "keywords": [
+        "水泽节",
+        "约束与尺度",
+        "60"
+      ],
+      "summary": "约束与尺度。明确规则与节奏，避免过度限制。",
+      "sourceIds": [
+        "zhouyi"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "hexagram-61",
+      "domain": "iching",
+      "name": "风泽中孚",
+      "keywords": [
+        "风泽中孚",
+        "诚信与互信",
+        "61"
+      ],
+      "summary": "诚信与互信。用可验证行动建立互信。",
+      "sourceIds": [
+        "zhouyi"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "hexagram-62",
+      "domain": "iching",
+      "name": "雷山小过",
+      "keywords": [
+        "雷山小过",
+        "小事可行与谨慎",
+        "62"
+      ],
+      "summary": "小事可行与谨慎。从低风险的小步骤入手。",
+      "sourceIds": [
+        "zhouyi"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "hexagram-63",
+      "domain": "iching",
+      "name": "水火既济",
+      "keywords": [
+        "水火既济",
+        "阶段完成后的维护",
+        "63"
+      ],
+      "summary": "阶段完成后的维护。完成不等于结束，注意复盘维护。",
+      "sourceIds": [
+        "zhouyi"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "hexagram-64",
+      "domain": "iching",
+      "name": "火水未济",
+      "keywords": [
+        "火水未济",
+        "未完成与持续演化",
+        "64"
+      ],
+      "summary": "未完成与持续演化。承认尚未完结，逐步补全条件。",
+      "sourceIds": [
+        "zhouyi"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "stem-甲",
+      "domain": "bazi",
+      "name": "甲日主",
+      "keywords": [
+        "甲",
+        "天干",
+        "日主",
+        "阳木"
+      ],
+      "summary": "阳木：树木向上生长的象征。观察长期方向和原则。",
+      "sourceIds": [
+        "ditiansui"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "stem-乙",
+      "domain": "bazi",
+      "name": "乙日主",
+      "keywords": [
+        "乙",
+        "天干",
+        "日主",
+        "阴木"
+      ],
+      "summary": "阴木：藤草与柔韧生长的象征。观察灵活协作和适应。",
+      "sourceIds": [
+        "ditiansui"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "stem-丙",
+      "domain": "bazi",
+      "name": "丙日主",
+      "keywords": [
+        "丙",
+        "天干",
+        "日主",
+        "阳火"
+      ],
+      "summary": "阳火：日光与外显能量的象征。观察如何让信息更清楚。",
+      "sourceIds": [
+        "ditiansui"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "stem-丁",
+      "domain": "bazi",
+      "name": "丁日主",
+      "keywords": [
+        "丁",
+        "天干",
+        "日主",
+        "阴火"
+      ],
+      "summary": "阴火：灯火与细密照明的象征。关注专注投入与持续维护。",
+      "sourceIds": [
+        "ditiansui"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "stem-戊",
+      "domain": "bazi",
+      "name": "戊日主",
+      "keywords": [
+        "戊",
+        "天干",
+        "日主",
+        "阳土"
+      ],
+      "summary": "阳土：高山厚土、承载之象。检查稳定性与责任边界。",
+      "sourceIds": [
+        "ditiansui"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "stem-己",
+      "domain": "bazi",
+      "name": "己日主",
+      "keywords": [
+        "己",
+        "天干",
+        "日主",
+        "阴土"
+      ],
+      "summary": "阴土：田园培植、整理之象。关注细节与资源培育。",
+      "sourceIds": [
+        "ditiansui"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "stem-庚",
+      "domain": "bazi",
+      "name": "庚日主",
+      "keywords": [
+        "庚",
+        "天干",
+        "日主",
+        "阳金"
+      ],
+      "summary": "阳金：金属锻造、决断之象。观察边界与执行力度。",
+      "sourceIds": [
+        "ditiansui"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "stem-辛",
+      "domain": "bazi",
+      "name": "辛日主",
+      "keywords": [
+        "辛",
+        "天干",
+        "日主",
+        "阴金"
+      ],
+      "summary": "阴金：精工细琢、辨析之象。重视质量与具体标准。",
+      "sourceIds": [
+        "ditiansui"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "stem-壬",
+      "domain": "bazi",
+      "name": "壬日主",
+      "keywords": [
+        "壬",
+        "天干",
+        "日主",
+        "阳水"
+      ],
+      "summary": "阳水：江河流动、联通之象。留意信息流动与变通。",
+      "sourceIds": [
+        "ditiansui"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "stem-癸",
+      "domain": "bazi",
+      "name": "癸日主",
+      "keywords": [
+        "癸",
+        "天干",
+        "日主",
+        "阴水"
+      ],
+      "summary": "阴水：雨露润泽、渗透之象。重视耐心与环境反馈。",
+      "sourceIds": [
+        "ditiansui"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "tengod-比肩",
+      "domain": "bazi",
+      "name": "比肩",
+      "keywords": [
+        "比肩",
+        "十神"
+      ],
+      "summary": "同类与自我主张的象征；可用于讨论协同和独立的平衡",
+      "sourceIds": [
+        "sanming",
+        "ziping"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "tengod-劫财",
+      "domain": "bazi",
+      "name": "劫财",
+      "keywords": [
+        "劫财",
+        "十神"
+      ],
+      "summary": "同伴、竞争和资源分配的象征；可用于思考边界与合作",
+      "sourceIds": [
+        "sanming",
+        "ziping"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "tengod-食神",
+      "domain": "bazi",
+      "name": "食神",
+      "keywords": [
+        "食神",
+        "十神"
+      ],
+      "summary": "表达、产出和滋养的象征；可用于讨论稳定创造",
+      "sourceIds": [
+        "sanming",
+        "ziping"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "tengod-伤官",
+      "domain": "bazi",
+      "name": "伤官",
+      "keywords": [
+        "伤官",
+        "十神"
+      ],
+      "summary": "表达、质疑和突破的象征；可用于讨论创新与规则",
+      "sourceIds": [
+        "sanming",
+        "ziping"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "tengod-偏财",
+      "domain": "bazi",
+      "name": "偏财",
+      "keywords": [
+        "偏财",
+        "十神"
+      ],
+      "summary": "资源调配与机会选择的象征；不代表实际收入",
+      "sourceIds": [
+        "sanming",
+        "ziping"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "tengod-正财",
+      "domain": "bazi",
+      "name": "正财",
+      "keywords": [
+        "正财",
+        "十神"
+      ],
+      "summary": "秩序化的资源管理的象征；不代表个人财富金额",
+      "sourceIds": [
+        "sanming",
+        "ziping"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "tengod-七杀",
+      "domain": "bazi",
+      "name": "七杀",
+      "keywords": [
+        "七杀",
+        "十神"
+      ],
+      "summary": "外部压力、竞争与挑战的象征；不等于必有危险",
+      "sourceIds": [
+        "sanming",
+        "ziping"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "tengod-偏官",
+      "domain": "bazi",
+      "name": "偏官",
+      "keywords": [
+        "偏官",
+        "十神"
+      ],
+      "summary": "七杀的另一种称呼，传统流派称谓略有不同",
+      "sourceIds": [
+        "sanming",
+        "ziping"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "tengod-正官",
+      "domain": "bazi",
+      "name": "正官",
+      "keywords": [
+        "正官",
+        "十神"
+      ],
+      "summary": "规则、角色责任和社会秩序的象征；不等于职业地位",
+      "sourceIds": [
+        "sanming",
+        "ziping"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "tengod-偏印",
+      "domain": "bazi",
+      "name": "偏印",
+      "keywords": [
+        "偏印",
+        "十神"
+      ],
+      "summary": "非标准学习、吸收和思维方式的象征；不等于性格诊断",
+      "sourceIds": [
+        "sanming",
+        "ziping"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "tengod-枭神",
+      "domain": "bazi",
+      "name": "枭神",
+      "keywords": [
+        "枭神",
+        "十神"
+      ],
+      "summary": "偏印的传统别称，使用条件因流派不同",
+      "sourceIds": [
+        "sanming",
+        "ziping"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "tengod-正印",
+      "domain": "bazi",
+      "name": "正印",
+      "keywords": [
+        "正印",
+        "十神"
+      ],
+      "summary": "学习、支持和知识传承的象征；不等于学历判断",
+      "sourceIds": [
+        "sanming",
+        "ziping"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "element-木",
+      "domain": "bazi",
+      "name": "木五行",
+      "keywords": [
+        "木",
+        "五行"
+      ],
+      "summary": "生长、规划与更新的传统类象",
+      "sourceIds": [
+        "ditiansui"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "element-火",
+      "domain": "bazi",
+      "name": "火五行",
+      "keywords": [
+        "火",
+        "五行"
+      ],
+      "summary": "表达、温度与外显的传统类象",
+      "sourceIds": [
+        "ditiansui"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "element-土",
+      "domain": "bazi",
+      "name": "土五行",
+      "keywords": [
+        "土",
+        "五行"
+      ],
+      "summary": "承载、管理与稳定的传统类象",
+      "sourceIds": [
+        "ditiansui"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "element-金",
+      "domain": "bazi",
+      "name": "金五行",
+      "keywords": [
+        "金",
+        "五行"
+      ],
+      "summary": "结构、界线与整合的传统类象",
+      "sourceIds": [
+        "ditiansui"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "element-水",
+      "domain": "bazi",
+      "name": "水五行",
+      "keywords": [
+        "水",
+        "五行"
+      ],
+      "summary": "流动、联结与适应的传统类象",
+      "sourceIds": [
+        "ditiansui"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "star-紫微",
+      "domain": "ziwei",
+      "name": "紫微星",
+      "keywords": [
+        "紫微",
+        "星曜"
+      ],
+      "summary": "统筹、组织与责任的传统类象",
+      "sourceIds": [
+        "ziwei-book"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "star-天机",
+      "domain": "ziwei",
+      "name": "天机星",
+      "keywords": [
+        "天机",
+        "星曜"
+      ],
+      "summary": "思考、设计与变化的传统类象",
+      "sourceIds": [
+        "ziwei-book"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "star-太阳",
+      "domain": "ziwei",
+      "name": "太阳星",
+      "keywords": [
+        "太阳",
+        "星曜"
+      ],
+      "summary": "外显、照应与行动的传统类象",
+      "sourceIds": [
+        "ziwei-book"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "star-武曲",
+      "domain": "ziwei",
+      "name": "武曲星",
+      "keywords": [
+        "武曲",
+        "星曜"
+      ],
+      "summary": "纪律、执行与资源管理的传统类象",
+      "sourceIds": [
+        "ziwei-book"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "star-天同",
+      "domain": "ziwei",
+      "name": "天同星",
+      "keywords": [
+        "天同",
+        "星曜"
+      ],
+      "summary": "和缓、体验与调适的传统类象",
+      "sourceIds": [
+        "ziwei-book"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "star-廉贞",
+      "domain": "ziwei",
+      "name": "廉贞星",
+      "keywords": [
+        "廉贞",
+        "星曜"
+      ],
+      "summary": "原则、辨析与人际分寸的传统类象",
+      "sourceIds": [
+        "ziwei-book"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "star-天府",
+      "domain": "ziwei",
+      "name": "天府星",
+      "keywords": [
+        "天府",
+        "星曜"
+      ],
+      "summary": "储备、统筹与稳健的传统类象",
+      "sourceIds": [
+        "ziwei-book"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "star-太阴",
+      "domain": "ziwei",
+      "name": "太阴星",
+      "keywords": [
+        "太阴",
+        "星曜"
+      ],
+      "summary": "内省、积累与细腻的传统类象",
+      "sourceIds": [
+        "ziwei-book"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "star-贪狼",
+      "domain": "ziwei",
+      "name": "贪狼星",
+      "keywords": [
+        "贪狼",
+        "星曜"
+      ],
+      "summary": "探索、社交与兴趣的传统类象",
+      "sourceIds": [
+        "ziwei-book"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "star-巨门",
+      "domain": "ziwei",
+      "name": "巨门星",
+      "keywords": [
+        "巨门",
+        "星曜"
+      ],
+      "summary": "表达、质询与观点分歧的传统类象",
+      "sourceIds": [
+        "ziwei-book"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "star-天相",
+      "domain": "ziwei",
+      "name": "天相星",
+      "keywords": [
+        "天相",
+        "星曜"
+      ],
+      "summary": "协调、程序与合作的传统类象",
+      "sourceIds": [
+        "ziwei-book"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "star-天梁",
+      "domain": "ziwei",
+      "name": "天梁星",
+      "keywords": [
+        "天梁",
+        "星曜"
+      ],
+      "summary": "守护、原则与长程责任的传统类象",
+      "sourceIds": [
+        "ziwei-book"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "star-七杀",
+      "domain": "ziwei",
+      "name": "七杀星",
+      "keywords": [
+        "七杀",
+        "星曜"
+      ],
+      "summary": "决断、变化与承压的传统类象",
+      "sourceIds": [
+        "ziwei-book"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "star-破军",
+      "domain": "ziwei",
+      "name": "破军星",
+      "keywords": [
+        "破军",
+        "星曜"
+      ],
+      "summary": "更新、重组与突破旧结构的传统类象",
+      "sourceIds": [
+        "ziwei-book"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "palace-命宫",
+      "domain": "ziwei",
+      "name": "命宫宫",
+      "keywords": [
+        "命宫",
+        "宫位"
+      ],
+      "summary": "传统上用来讨论自我呈现与行为方式",
+      "sourceIds": [
+        "ziwei-book"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "palace-兄弟",
+      "domain": "ziwei",
+      "name": "兄弟宫",
+      "keywords": [
+        "兄弟",
+        "宫位"
+      ],
+      "summary": "传统上用于讨论手足及同辈互动",
+      "sourceIds": [
+        "ziwei-book"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "palace-夫妻",
+      "domain": "ziwei",
+      "name": "夫妻宫",
+      "keywords": [
+        "夫妻",
+        "宫位"
+      ],
+      "summary": "传统上用于讨论亲密关系中的相处模式",
+      "sourceIds": [
+        "ziwei-book"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "palace-子女",
+      "domain": "ziwei",
+      "name": "子女宫",
+      "keywords": [
+        "子女",
+        "宫位"
+      ],
+      "summary": "传统上用于讨论养育、创造与代际交流",
+      "sourceIds": [
+        "ziwei-book"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "palace-财帛",
+      "domain": "ziwei",
+      "name": "财帛宫",
+      "keywords": [
+        "财帛",
+        "宫位"
+      ],
+      "summary": "传统上用于讨论资源管理和价值交换",
+      "sourceIds": [
+        "ziwei-book"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "palace-疾厄",
+      "domain": "ziwei",
+      "name": "疾厄宫",
+      "keywords": [
+        "疾厄",
+        "宫位"
+      ],
+      "summary": "传统上用于讨论身体照护的象征，并非医疗判断",
+      "sourceIds": [
+        "ziwei-book"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "palace-迁移",
+      "domain": "ziwei",
+      "name": "迁移宫",
+      "keywords": [
+        "迁移",
+        "宫位"
+      ],
+      "summary": "传统上用于讨论外部环境、迁动和对外联系",
+      "sourceIds": [
+        "ziwei-book"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "palace-交友",
+      "domain": "ziwei",
+      "name": "交友宫",
+      "keywords": [
+        "交友",
+        "宫位"
+      ],
+      "summary": "传统上用于讨论社交与合作网络",
+      "sourceIds": [
+        "ziwei-book"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "palace-仆役",
+      "domain": "ziwei",
+      "name": "仆役宫",
+      "keywords": [
+        "仆役",
+        "宫位"
+      ],
+      "summary": "交友宫的传统称呼",
+      "sourceIds": [
+        "ziwei-book"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "palace-官禄",
+      "domain": "ziwei",
+      "name": "官禄宫",
+      "keywords": [
+        "官禄",
+        "宫位"
+      ],
+      "summary": "传统上用于讨论工作角色、职责与事业安排",
+      "sourceIds": [
+        "ziwei-book"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "palace-事业",
+      "domain": "ziwei",
+      "name": "事业宫",
+      "keywords": [
+        "事业",
+        "宫位"
+      ],
+      "summary": "官禄宫的通俗称呼",
+      "sourceIds": [
+        "ziwei-book"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "palace-田宅",
+      "domain": "ziwei",
+      "name": "田宅宫",
+      "keywords": [
+        "田宅",
+        "宫位"
+      ],
+      "summary": "传统上用于讨论居住空间、资产与家庭基础",
+      "sourceIds": [
+        "ziwei-book"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "palace-福德",
+      "domain": "ziwei",
+      "name": "福德宫",
+      "keywords": [
+        "福德",
+        "宫位"
+      ],
+      "summary": "传统上用于讨论心理感受、休闲与内在资源",
+      "sourceIds": [
+        "ziwei-book"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "palace-父母",
+      "domain": "ziwei",
+      "name": "父母宫",
+      "keywords": [
+        "父母",
+        "宫位"
+      ],
+      "summary": "传统上用于讨论上一代及外部支持关系",
+      "sourceIds": [
+        "ziwei-book"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "trigram-乾",
+      "domain": "iching",
+      "name": "乾卦",
+      "keywords": [
+        "乾",
+        "八卦"
+      ],
+      "summary": "天，阳健之象",
+      "sourceIds": [
+        "zhouyi",
+        "meihua"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "trigram-兑",
+      "domain": "iching",
+      "name": "兑卦",
+      "keywords": [
+        "兑",
+        "八卦"
+      ],
+      "summary": "泽，交流与喜悦之象",
+      "sourceIds": [
+        "zhouyi",
+        "meihua"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "trigram-离",
+      "domain": "iching",
+      "name": "离卦",
+      "keywords": [
+        "离",
+        "八卦"
+      ],
+      "summary": "火，明晰与依附之象",
+      "sourceIds": [
+        "zhouyi",
+        "meihua"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "trigram-震",
+      "domain": "iching",
+      "name": "震卦",
+      "keywords": [
+        "震",
+        "八卦"
+      ],
+      "summary": "雷，发动与变化之象",
+      "sourceIds": [
+        "zhouyi",
+        "meihua"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "trigram-巽",
+      "domain": "iching",
+      "name": "巽卦",
+      "keywords": [
+        "巽",
+        "八卦"
+      ],
+      "summary": "风，柔顺与渗透之象",
+      "sourceIds": [
+        "zhouyi",
+        "meihua"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "trigram-坎",
+      "domain": "iching",
+      "name": "坎卦",
+      "keywords": [
+        "坎",
+        "八卦"
+      ],
+      "summary": "水，险阻与流动之象",
+      "sourceIds": [
+        "zhouyi",
+        "meihua"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "trigram-艮",
+      "domain": "iching",
+      "name": "艮卦",
+      "keywords": [
+        "艮",
+        "八卦"
+      ],
+      "summary": "山，停止与节制之象",
+      "sourceIds": [
+        "zhouyi",
+        "meihua"
+      ],
+      "originalSummary": true
+    },
+    {
+      "id": "trigram-坤",
+      "domain": "iching",
+      "name": "坤卦",
+      "keywords": [
+        "坤",
+        "八卦"
+      ],
+      "summary": "地，承载与柔顺之象",
+      "sourceIds": [
+        "zhouyi",
+        "meihua"
+      ],
+      "originalSummary": true
+    }
+  ],
+  "verifiedQuotes": [
+    {
+      "id": "quote-dty-moon",
+      "domain": "bazi",
+      "title": "月令与格局",
+      "text": "月令提纲，譬之宅也，人元用事之神，宅之向也，不可以不卜。",
+      "sourceId": "ditiansui",
+      "locator": "月令论",
+      "status": "verified-short-excerpt",
+      "url": "https://zh.wikisource.org/zh/滴天髓"
+    },
+    {
+      "id": "quote-meihua-first",
+      "domain": "meihua",
+      "title": "起卦有其情境",
+      "text": "不動不占，不因事不占。",
+      "sourceId": "meihua",
+      "locator": "卷一·观梅占",
+      "status": "verified-short-excerpt",
+      "url": "https://zh.wikisource.org/zh-hant/梅花易數/卷一"
+    },
+    {
+      "id": "quote-zhouyi-qian",
+      "domain": "iching",
+      "title": "乾卦卦辞",
+      "text": "元亨利貞。",
+      "sourceId": "zhouyi",
+      "locator": "乾卦",
+      "status": "verified-short-excerpt",
+      "url": "https://ctext.org/book-of-changes/qian/zh"
+    }
+  ]
+}
