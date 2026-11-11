@@ -175,7 +175,7 @@ export class PostgresSignbookStore {
     if (!['all', 'daily', 'question'].includes(kind)) throw new Error('kind 无效');
     if (!Number.isInteger(limit) || limit < 1 || limit > 500) throw new Error('limit 必须在 1~500');
     if (!Number.isInteger(offset) || offset < 0 || offset > 5000) throw new Error('offset 必须在 0~5000');
-    if (month && !/^\\d{4}-(0[1-9]|1[0-2])$/.test(month)) throw new Error('month 必须为 YYYY-MM');
+    if (month && !/^\d{4}-(0[1-9]|1[0-2])$/.test(month)) throw new Error('month 必须为 YYYY-MM');
 
     const filters = ['owner_hash = $1'];
     const values = [profileId];
