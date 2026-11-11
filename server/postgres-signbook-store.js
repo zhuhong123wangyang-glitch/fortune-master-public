@@ -211,4 +211,26 @@ export class PostgresSignbookStore {
     );
     return toRecord(result.rows[0]);
   }
+
+  async importRecords(profileId, records) {
+    profileId = checkProfile(profileId);
+    if (!Array.isArray(records) || records.length > 5000) throw new Error('备份最多允许导入 5000 条记录');
+    const pool = this.#pool();
+    let imported = 0, skipped = 0;
+    for (const record of records) {
+      const result = await pool.query(
+        `INSERT INTO daily_sign_records
+         (id, owner_hash, record_kind, sign_date, timezone, drawn_at, sign,
+          system_id, system_version, topic, question, favorite)
+         VALUES ($1, $2, $3, $4::date, $5, $6::timestamptz, $7::jsonb,
+                 $8, $9, $10, $11, $12)
+         ON CONFLICT DO NOTHING RETURNING id`,
+        [record.id, profileId, record.kind, record.date, record.timezone,
+          record.drawnAt, JSON.stringify(record.sign), record.systemId,
+          record.systemVersion, record.topic, record.question || '', Boolean(record.favorite)]
+      );
+      if (result.rowCount) imported++; else skipped++;
+    }
+    return { imported, skipped };
+  }
 }
