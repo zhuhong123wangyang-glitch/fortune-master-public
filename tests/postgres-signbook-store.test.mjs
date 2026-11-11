@@ -11,7 +11,7 @@ class FakePool {
       let rows = this.rows.filter(x => x.owner_hash === owner);
       if (sql.includes('record_kind = $2')) rows = rows.filter(x => x.record_kind === values[1]);
       if (sql.includes('sign_date >= $')) {
-        const month = values.find(x => typeof x === 'string' && /^\\d{4}-\\d{2}-01$/.test(x));
+        const month = values.find(x => typeof x === 'string' && /^\d{4}-\d{2}-01$/.test(x));
         if (month) rows = rows.filter(x => x.sign_date.startsWith(month.slice(0, 7)));
       }
       return { rowCount: 1, rows: [{ total: rows.length }] };
