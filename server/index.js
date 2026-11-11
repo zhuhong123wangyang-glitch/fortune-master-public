@@ -211,6 +211,7 @@ app.post('/api/daily-sign', requireOwner, async (req, res) => {
     if (action === 'status') return res.json(await service.status());
     if (action === 'catalog') return res.json(listSigns({ query: payload.query || '', limit: payload.limit || 100 }));
     if (action === 'history') return res.json(await service.history(payload));
+    if (action === 'restore') return res.json(await service.restoreHistory({ profileId: req.ownerHash, items: payload.items }));
     if (action === 'read') return res.json(await service.readRecord(payload));
     if (action === 'followup') return res.status(400).json({ error: '请使用签文追问接口。' });
     res.json(await service.perform(payload));
