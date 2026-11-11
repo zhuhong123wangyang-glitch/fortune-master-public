@@ -8,7 +8,9 @@
 - 公网 Express API：计算、报告、知识检索、出生时间预检、每日签与签文追问。
 - 八字 / 紫微 / 合盘使用原版第三方依赖 `lunar-typescript@1.8.6`、`iztro@2.6.3`。
 - 命盘档案和普通记录默认保存在访问者浏览器；计算结果可选择本机 / 云端 / 两者同时保存。命盘出生资料默认只保存在本机，另行勾选同意后才会通过独立加密秘密派生密钥并以 AES-256-GCM 加密上传 PostgreSQL。服务器只接收用于归属隔离的匿名设备 Token，并仅保存其 SHA-256 哈希；加密秘密不会发送给服务器。
-- 记录 API 使用 `owner_hash` 过滤，实现匿名设备隔离；按设备最多 500 条云端记录。
+- 记录 API 使用 `owner_hash` 过滤，实现匿名设备隔离；按设备最多 500 条普通云端记录。
+- 每日签簿可在配置 `DATABASE_URL` 后切换到 PostgreSQL，签文 JSON、日期、时区、收藏和问题同意状态按匿名设备哈希隔离；数据库建立“设备 + 日期”唯一索引，防止并发产生重复的每日固定签。
+- 每日签簿支持导出历史 JSON，并可在部署存储切换后导入恢复；导入时会按内置签库校验签号、标题与诗句，不接受被修改的签文内容。
 - 设备备份会导出匿名设备 Token、独立加密秘密、本机记录和本机命盘档案；导入后可恢复同一设备的云端记录。
 - Helmet 安全响应头、仅允许同源外部脚本的 CSP、API 速率限制、JSON 大小限制、加密包格式校验。
 
@@ -33,9 +35,9 @@ npm start
 3. 确认计划中只有 `fortune-master-public` 免费 Web Service，再应用部署。
 4. 服务上线后会得到 `https://<service-name>.onrender.com` 分享网址；健康检查为 `/api/health`。
 
-**免费版限制：** Render 免费 Web Service 在连续 15 分钟无流量后会休眠，首次重新访问可能需要约一分钟冷启动；文件系统为临时存储，重启、休眠或重新部署时本机服务端文件会丢失。浏览器本地档案和记录仍可用；未配置 PostgreSQL 时，云端记录同步保持关闭。免费 PostgreSQL 虽可试用，但会在 30 天后到期，不作为长期数据保存方案。详见 Render 官方说明：https://render.com/docs/free 。
+**免费版限制：** Render 免费 Web Service 在连续 15 分钟无流量后会休眠，首次重新访问可能需要约一分钟冷启动；文件系统为临时存储，重启、休眠或重新部署时服务端临时签簿文件会丢失。浏览器本地档案和记录仍可用。未配置 `DATABASE_URL` 时，每日签簿继续使用临时文件并在界面明确提示；配置 PostgreSQL 后才切换为长期数据库存储。Render 免费 PostgreSQL 会在 30 天后到期，不作为长期数据保存方案。详见 Render 官方说明：https://render.com/docs/free 。
 
-**付费扩展（暂不启用）：** 如需长期云端加密记录，可在确认费用后再添加 PostgreSQL。Render 当前公开价格中 `0.1c-256mb` PostgreSQL 为 US$6/月，额外存储或用量可能另计；免费试用配置不会创建该资源。价格以 Render 控制台为准：https://render.com/pricing 。
+**长期持久化部署步骤：** 在 Render 同一 workspace / Oregon 区域创建 PostgreSQL，并将数据库的 Internal Database URL 作为 Web Service 环境变量 `DATABASE_URL`；服务启动时会自动创建 `daily_sign_records` 表和索引。若从临时文件版本升级，请先在每日一签页面导出历史 JSON，完成数据库连接后再使用“导入历史 JSON”恢复。先在独立分支完成测试，再通过 Pull Request 合并和部署。数据库费用和保留策略以创建时 Render 控制台显示为准；本仓库不会自动创建或升级付费资源。
 
 ## 数据与隐私模型
 
