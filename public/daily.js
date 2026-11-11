@@ -51,7 +51,11 @@ async function loadHistory(){
   try{
     const hist=await post('/api/daily-sign',{action:'history',profileId:profile,limit:200});
     const items=hist.items;
-    $('stage').innerHTML=`<div class="sign-history-head"><div><small class="eyebrow">DEVICE SIGNBOOK · TEMPORARY</small><h2>个人历史签簿</h2><p class="sign-small-muted">当前设备记录 ${hist.total} 条，显示最近 ${items.length} 条；服务端临时保存，部署重启后可能清空；问题仅在勾选“保存提问”时记录</p></div><span class="chip">设备独立记录</span></div>
+    const storageLabel=hist.storage==='postgres'?'POSTGRESQL · PERSISTENT':'TEMPORARY FILE · MAY BE CLEARED';
+    const storageNote=hist.persistent
+      ? '历史记录保存在 PostgreSQL，并按当前匿名设备隔离；问题仅在勾选“保存提问”时记录。'
+      : '服务端当前使用临时文件保存，休眠、重启或重新部署可能清空；问题仅在勾选“保存提问”时记录。';
+    $('stage').innerHTML=`<div class="sign-history-head"><div><small class="eyebrow">DEVICE SIGNBOOK · ${storageLabel}</small><h2>个人历史签簿</h2><p class="sign-small-muted">当前设备记录 ${hist.total} 条，显示最近 ${items.length} 条；${storageNote}</p></div><span class="chip">设备独立记录</span></div>
     <div class="sign-pager"><button data-signact="peek">返回今日签文</button><button data-signact="export-history">导出历史 JSON</button><button data-signact="clear" ${items.length?'':'disabled'}>清空当前档案</button></div>
     <div class="sign-history-items">${items.map(x=>`<div class="sign-entry"><div><strong>${esc(x.title)} · 第${x.signId}签 ${x.favorite?'★':''}</strong><small>${esc(x.date)} · ${x.kind==='daily'?'每日':'问事'} · ${esc(x.grade)} · ${esc(x.theme)}</small></div><div class="sign-ops"><button data-signact="read" data-id="${esc(x.id)}">详情</button><button data-signact="delete" data-id="${esc(x.id)}" class="remove">删除</button></div></div>`).join('')||'<p class="sign-small-muted">还没有历史签文，请先抽一签。</p>'}</div>`;
   }catch(e){setupError(e.message);}
