@@ -29,7 +29,15 @@ export class DailySignService {
   async history({profileId='local-default',kind='all',limit=100,offset=0,month,onlyFavorite=false}={}){
     const hist=await this.store.history(profileId,{kind,limit,offset,month});
     const items=hist.items.filter(x=>!onlyFavorite||x.favorite).map(r=>({id:r.id,kind:r.kind,date:r.date,timezone:r.timezone,drawnAt:r.drawnAt,signId:r.sign.id,title:r.sign.title,grade:r.sign.grade,theme:r.sign.theme,lines:r.sign.lines,favorite:r.favorite,topic:r.topic,storedQuestion:r.question||''}));
-    return {total:hist.total,items,privacy:'本地文件持久化；问题仅在明确同意保存时写入。'};
+    const storage = this.store.storageType || 'file';
+    return {
+      total:hist.total, items,
+      storage,
+      persistent:storage === 'postgres',
+      privacy:storage === 'postgres'
+        ? 'PostgreSQL 持久化保存；按匿名设备隔离；问题仅在明确同意保存时写入。'
+        : '当前为服务端临时文件存储；休眠、重启或重新部署可能清空；问题仅在明确同意保存时写入。'
+    };
   }
   async readRecord({profileId='local-default',recordId,topic,question=''}={}){
     checkProfile(profileId);validateQuestion(question);
@@ -38,6 +46,13 @@ export class DailySignService {
     if(!r)throw new Error('找不到该记录');
     return {action:'read',data:formatSignResult(r,{topic:topic||r.topic,question:question||r.question||''})};
   }
-  async status(){return {systems:availableSignSystems(),topics:topicOptions(),modelEnabled:Boolean(process.env.FORTUNE_LLM_API_KEY&&process.env.FORTUNE_LLM_MODEL),reminderMode:'browser-open-only'};}
+  async status(){
+    const storage = this.store.storageType || 'file';
+    return {
+      systems:availableSignSystems(), topics:topicOptions(),
+      modelEnabled:Boolean(process.env.FORTUNE_LLM_API_KEY&&process.env.FORTUNE_LLM_MODEL),
+      reminderMode:'browser-open-only', storage, persistent:storage === 'postgres'
+    };
+  }
 }
 export const dailySignService=new DailySignService();
