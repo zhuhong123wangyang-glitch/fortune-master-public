@@ -24,7 +24,7 @@ export function localDay(date=new Date(),timezone='Asia/Shanghai'){
 const empty=()=>({schemaVersion:1,records:[]});
 export class SignbookStore {
   #queue=Promise.resolve();
-  constructor(path=DEFAULT_SIGNBOOK_PATH){this.path=path;}
+  constructor(path=DEFAULT_SIGNBOOK_PATH){this.path=path;this.storageType='file';}
   async read(){
     try{
       const data=JSON.parse(await readFile(this.path,'utf8'));
@@ -52,6 +52,25 @@ export class SignbookStore {
   async find(profileId,id){
     const data=await this.read();
     return structuredClone(data.records.find(x=>x.profileId===checkProfile(profileId)&&x.id===id)||null);
+  }
+  async importRecords(profileId, records){
+    profileId=checkProfile(profileId);
+    if(!Array.isArray(records)||records.length>5000)throw new Error('备份最多允许导入 5000 条记录');
+    return this.update(async(db)=>{
+      const mine=db.records.filter(x=>x.profileId===profileId);
+      const ids=new Set(mine.map(x=>x.id));
+      const dailyDates=new Set(mine.filter(x=>x.kind==='daily').map(x=>x.date));
+      let imported=0,skipped=0;
+      for(const record of records){
+        if(ids.has(record.id)||(record.kind==='daily'&&dailyDates.has(record.date))){skipped++;continue;}
+        if(mine.length+imported>=MAX_RECORDS_PER_PROFILE)throw new Error('当前设备签簿达到 5000 条上限，已停止导入');
+        db.records.push({...structuredClone(record),profileId});
+        ids.add(record.id);
+        if(record.kind==='daily')dailyDates.add(record.date);
+        imported++;
+      }
+      return {value:{imported,skipped},dirty:imported>0};
+    });
   }
   async history(profileId,{kind='all',limit=100,offset=0,month}={}){
     checkProfile(profileId);
