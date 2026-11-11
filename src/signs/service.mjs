@@ -29,7 +29,42 @@ export class DailySignService {
   async history({profileId='local-default',kind='all',limit=100,offset=0,month,onlyFavorite=false}={}){
     const hist=await this.store.history(profileId,{kind,limit,offset,month});
     const items=hist.items.filter(x=>!onlyFavorite||x.favorite).map(r=>({id:r.id,kind:r.kind,date:r.date,timezone:r.timezone,drawnAt:r.drawnAt,signId:r.sign.id,title:r.sign.title,grade:r.sign.grade,theme:r.sign.theme,lines:r.sign.lines,favorite:r.favorite,topic:r.topic,storedQuestion:r.question||''}));
-    return {total:hist.total,items,privacy:'本地文件持久化；问题仅在明确同意保存时写入。'};
+    const storage = this.store.storageType || 'file';
+    return {
+      total:hist.total, items,
+      storage,
+      persistent:storage === 'postgres',
+      privacy:storage === 'postgres'
+        ? 'PostgreSQL 持久化保存；按匿名设备隔离；问题仅在明确同意保存时写入。'
+        : '当前为服务端临时文件存储；休眠、重启或重新部署可能清空；问题仅在明确同意保存时写入。'
+    };
+  }
+  async restoreHistory({profileId='local-default',items=[]}={}){
+    checkProfile(profileId);
+    if(!Array.isArray(items)||items.length>5000)throw new Error('备份格式无效：最多允许 5000 条记录');
+    const records=[];
+    for(const item of items){
+      if(!item||typeof item!=='object'||Array.isArray(item))throw new Error('备份中存在无效记录');
+      if(typeof item.id!=='string'||!/^([0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12})$/i.test(item.id))throw new Error('备份记录 ID 无效');
+      if(!['daily','question'].includes(item.kind))throw new Error('备份记录类型无效');
+      if(typeof item.date!=='string'||!/^\d{4}-\d{2}-\d{2}$/.test(item.date)||new Date(item.date+'T00:00:00Z').toISOString().slice(0,10)!==item.date)throw new Error('备份日期无效');
+      const timezone=checkTimezone(item.timezone||'Asia/Shanghai');
+      const drawnAt=new Date(item.drawnAt);
+      if(!Number.isFinite(drawnAt.getTime()))throw new Error('备份抽签时间无效');
+      const signId=Number(item.signId);
+      const sign=getSign(signId);
+      if((item.title&&item.title!==sign.title)||(item.grade&&item.grade!==sign.grade))throw new Error('备份签文与当前原创签库不匹配，请保留原始备份');
+      if(Array.isArray(item.lines)&&JSON.stringify(item.lines)!==JSON.stringify(sign.lines))throw new Error('备份签诗内容与当前签库不一致');
+      const topic=validateTopic(typeof item.topic==='string'?item.topic:'general');
+      const storedQuestion=validateQuestion(typeof item.storedQuestion==='string'?item.storedQuestion:'');
+      records.push({
+        id:item.id,kind:item.kind,date:item.date,timezone,drawnAt:drawnAt.toISOString(),
+        sign,systemId:DEFAULT_SIGN_SYSTEM,systemVersion:SIGN_CATALOG_VERSION,
+        topic,question:storedQuestion,favorite:Boolean(item.favorite)
+      });
+    }
+    if(typeof this.store.importRecords!=='function')throw new Error('当前签簿存储不支持备份恢复');
+    return this.store.importRecords(profileId,records);
   }
   async readRecord({profileId='local-default',recordId,topic,question=''}={}){
     checkProfile(profileId);validateQuestion(question);
@@ -38,6 +73,13 @@ export class DailySignService {
     if(!r)throw new Error('找不到该记录');
     return {action:'read',data:formatSignResult(r,{topic:topic||r.topic,question:question||r.question||''})};
   }
-  async status(){return {systems:availableSignSystems(),topics:topicOptions(),modelEnabled:Boolean(process.env.FORTUNE_LLM_API_KEY&&process.env.FORTUNE_LLM_MODEL),reminderMode:'browser-open-only'};}
+  async status(){
+    const storage = this.store.storageType || 'file';
+    return {
+      systems:availableSignSystems(), topics:topicOptions(),
+      modelEnabled:Boolean(process.env.FORTUNE_LLM_API_KEY&&process.env.FORTUNE_LLM_MODEL),
+      reminderMode:'browser-open-only', storage, persistent:storage === 'postgres'
+    };
+  }
 }
 export const dailySignService=new DailySignService();
