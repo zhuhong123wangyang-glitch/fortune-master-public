@@ -47,7 +47,7 @@ export class DailySignService {
       if(!item||typeof item!=='object'||Array.isArray(item))throw new Error('备份中存在无效记录');
       if(typeof item.id!=='string'||!/^([0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12})$/i.test(item.id))throw new Error('备份记录 ID 无效');
       if(!['daily','question'].includes(item.kind))throw new Error('备份记录类型无效');
-      if(typeof item.date!=='string'||!/^\\d{4}-\\d{2}-\\d{2}$/.test(item.date)||new Date(item.date+'T00:00:00Z').toISOString().slice(0,10)!==item.date)throw new Error('备份日期无效');
+      if(typeof item.date!=='string'||!/^\d{4}-\d{2}-\d{2}$/.test(item.date)||new Date(item.date+'T00:00:00Z').toISOString().slice(0,10)!==item.date)throw new Error('备份日期无效');
       const timezone=checkTimezone(item.timezone||'Asia/Shanghai');
       const drawnAt=new Date(item.drawnAt);
       if(!Number.isFinite(drawnAt.getTime()))throw new Error('备份抽签时间无效');
