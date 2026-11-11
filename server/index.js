@@ -17,6 +17,7 @@ import { route } from '../src/core/router.mjs';
 import { searchKnowledge } from '../src/knowledge/catalog.mjs';
 import { renderHTML } from '../src/reports/html.mjs';
 import { SignbookStore } from '../src/signs/store.mjs';
+import { PostgresSignbookStore } from './postgres-signbook-store.js';
 import { DailySignService } from '../src/signs/service.mjs';
 import { followUp } from '../src/signs/followup.mjs';
 import { listSigns } from '../src/signs/catalog.mjs';
@@ -88,7 +89,10 @@ function getDailyService(owner) {
     if (oldest) signServices.delete(oldest);
   }
   const filename = path.join(signbookRoot, `${owner}.json`);
-  service = new DailySignService(new SignbookStore(filename));
+  const store = isDatabaseConfigured()
+    ? new PostgresSignbookStore()
+    : new SignbookStore(filename);
+  service = new DailySignService(store);
   signServices.set(owner, service);
   return service;
 }
@@ -122,7 +126,10 @@ app.get('/api/health', async (_req, res) => {
   res.status(database === 'error' ? 503 : 200).json({
     status: database === 'error' ? 'degraded' : 'ok', database,
     version: '0.2.0', algorithms: ['bazi', 'ziwei', 'liuyao', 'meihua', 'huangli', 'daily-sign', 'hepan'],
-    cloudStorage: database === 'connected', localStorage: true
+    cloudStorage: database === 'connected',
+    signbookStorage: database === 'connected' ? 'postgres' : 'ephemeral-file',
+    signbookPersistent: database === 'connected',
+    localStorage: true
   });
 });
 app.get('/health', (_req, res) => res.redirect(307, '/api/health'));
@@ -218,7 +225,7 @@ app.post('/api/sign-followup', requireOwner, async (req, res) => {
   } catch (error) { res.status(400).json({ error: error.message || '签文追问失败' }); }
 });
 
-app.use(express.static(path.join(__dirname, '..', 'public'), { extensions: ['html'], maxAge: process.env.NODE_ENV === 'production' ? '1h' : 0 }));
+app.use(express.static(path.join(__dirname, '..', 'public'), { extensions: ['html'], maxAge: 0 }));
 app.get('*', (_req, res) => res.sendFile(path.join(__dirname, '..', 'public', 'index.html')));
 app.use((error, _req, res, _next) => {
   console.error('Request error:', error.message);
