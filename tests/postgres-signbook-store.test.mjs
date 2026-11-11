@@ -19,12 +19,12 @@ class FakePool {
 
     if (sql.includes('INSERT INTO daily_sign_records')) {
       const [id, owner_hash, record_kind, sign_date, timezone, drawn_at, sign, system_id, system_version, topic, question] = values;
-      if (record_kind === 'daily' && this.rows.some(x => x.owner_hash === owner_hash && x.record_kind === 'daily' && x.sign_date === sign_date)) {
+      if (this.rows.some(x => x.id === id) || (record_kind === 'daily' && this.rows.some(x => x.owner_hash === owner_hash && x.record_kind === 'daily' && x.sign_date === sign_date))) {
         return { rowCount: 0, rows: [] };
       }
       const row = {
         id, owner_hash, record_kind, sign_date, timezone, drawn_at,
-        sign: JSON.parse(sign), system_id, system_version, topic, question, favorite: false
+        sign: JSON.parse(sign), system_id, system_version, topic, question, favorite: Boolean(values[11])
       };
       this.rows.push(row);
       return { rowCount: 1, rows: [row] };
@@ -119,4 +119,34 @@ test('Postgres signbook isolates owners and supports history, favorite, read, an
   assert.equal(deleted.deleted, 1);
   assert.equal((await store.history(ownerA)).total, 0);
   assert.equal((await store.history(ownerB)).total, 1);
+});
+
+test('concurrent daily draws for one device and date converge on one persisted sign', async () => {
+  const pool = new FakePool();
+  const store = new PostgresSignbookStore(() => pool);
+  const args = {
+    action: 'draw', profileId: ownerA, timezone: 'Asia/Shanghai', now,
+    randomSign: () => sign, systemId: 'four-seasons-100-signs',
+    systemVersion: '1.0.0', topic: 'general'
+  };
+  const [a, b] = await Promise.all([store.run(args), store.run(args)]);
+  assert.equal(a.id, b.id);
+  assert.equal(pool.rows.filter(x => x.owner_hash === ownerA && x.record_kind === 'daily').length, 1);
+});
+
+test('backup import is owner-scoped and idempotent for an existing UUID', async () => {
+  const pool = new FakePool();
+  const store = new PostgresSignbookStore(() => pool);
+  const record = {
+    id: '123e4567-e89b-42d3-a456-426614174000',
+    kind: 'question', date: '2026-11-11', timezone: 'Asia/Shanghai',
+    drawnAt: now.toISOString(), sign, systemId: 'four-seasons-100-signs',
+    systemVersion: '1.0.0', topic: 'general', question: '测试问题', favorite: true
+  };
+  const first = await store.importRecords(ownerA, [record]);
+  const second = await store.importRecords(ownerA, [record]);
+  assert.deepEqual(first, { imported: 1, skipped: 0 });
+  assert.deepEqual(second, { imported: 0, skipped: 1 });
+  assert.equal((await store.history(ownerA)).items[0].question, '测试问题');
+  assert.equal((await store.history(ownerB)).total, 0);
 });
